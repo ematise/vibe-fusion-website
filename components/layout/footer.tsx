@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
 
@@ -14,9 +15,11 @@ export function Footer() {
           {/* Restaurant Info */}
           <div className="space-y-6 pr-6 md:col-span-2">
             <div className="">
-              <img 
+              <Image 
                 src="/vibe-logo-white-transparent-bg.png" 
                 alt="Vibe Restaurant | Bar" 
+                width={128}
+                height={128}
                 className="h-32 w-auto"
               />
 

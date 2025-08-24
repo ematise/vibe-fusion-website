@@ -76,7 +76,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
       <body className={inter.className}>
-        <LanguageProvider initialLocale={locale as 'ro' | 'en' | 'hu'}>
+        <LanguageProvider initialLocale={locale as 'ro' | 'en'}>
           {children}
         </LanguageProvider>
       </body>

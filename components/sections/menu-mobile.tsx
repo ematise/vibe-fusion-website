@@ -42,7 +42,7 @@ interface MenuData {
   menus: Menu[]
 }
 
-type ViewState = 'subcategories' | 'items'
+type ViewState = 'categories' | 'subcategories' | 'items'
 
 export function MenuMobile() {
   const { t } = useTranslation()
@@ -85,6 +85,12 @@ export function MenuMobile() {
   const handleBackToSubcategories = () => {
     setSelectedSubcategory(null)
     setViewState('subcategories')
+  }
+
+  const handleBackToCategories = () => {
+    setSelectedCategoryIndex(0)
+    setSelectedSubcategory(null)
+    setViewState('categories')
   }
 
   if (loading) {
@@ -131,7 +137,7 @@ export function MenuMobile() {
                 <Card 
                   key={index} 
                   className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition-shadow"
-                  onClick={() => handleCategoryClick(category)}
+                  onClick={() => handleCategoryClick(index)}
                 >
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
@@ -153,7 +159,7 @@ export function MenuMobile() {
               <Card 
                 key={index} 
                 className="cursor-pointer hover:shadow-lg transition-shadow"
-                onClick={() => handleCategoryClick(category)}
+                onClick={() => handleCategoryClick(index)}
               >
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
@@ -171,7 +177,7 @@ export function MenuMobile() {
       )}
 
       {/* Subcategories View */}
-      {viewState === 'subcategories' && selectedCategory && (
+      {viewState === 'subcategories' && menuData && menuData.menus[selectedCategoryIndex] && (
         <div>
           <div className="flex items-center mb-6">
             <Button 
@@ -181,11 +187,11 @@ export function MenuMobile() {
             >
               <ArrowLeft className="h-5 w-5" />
             </Button>
-            <h2 className="text-2xl font-semibold text-brand-dark">{selectedCategory.name}</h2>
+            <h2 className="text-2xl font-semibold text-brand-dark">{menuData.menus[selectedCategoryIndex].name}</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {selectedCategory.subcategories.map((subcategory, index) => (
+            {menuData.menus[selectedCategoryIndex].subcategories.map((subcategory, index) => (
               <Card 
                 key={index} 
                 className="cursor-pointer hover:shadow-lg transition-shadow overflow-hidden"

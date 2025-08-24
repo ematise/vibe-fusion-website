@@ -33,9 +33,11 @@ export function Hero() {
         >
           <div className="mb-8">
             <div className="px-8 py-6 rounded-lg inline-block">
-              <img 
+              <Image 
                 src="/vibe-logo-white-transparent-bg.png" 
                 alt="Vibe Restaurant | Bar" 
+                width={160}
+                height={160}
                 className="h-32 md:h-40 w-auto mx-auto"
               />
             </div>

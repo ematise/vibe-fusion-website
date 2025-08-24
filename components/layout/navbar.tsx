@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -32,9 +33,11 @@ export function Navbar() {
             href="/" 
             className="flex items-center"
           >
-            <img 
+            <Image 
               src="/vibe-logo-white-transparent-bg-simple.png" 
               alt="Vibe Restaurant | Bar" 
+              width={48}
+              height={48}
               className="h-12 w-auto"
             />
           </Link>
