@@ -1,12 +1,5 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
-  "installCommand": "npm install",
-  "env": {
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "DATABASE_URL": "@database_url",
-    "ADMIN_EMAIL": "@admin_email",
-    "ADMIN_PASSWORD": "@admin_password"
-  }
-} 
+  "buildCommand": "yarn build",
+  "installCommand": "yarn install"
+}
