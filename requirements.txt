@@ -1,0 +1,11 @@
+I would like to build a restaurant website for a restaurant called Vibe, it is a fusion restaurant (check their instagram posts and posts description to find more about them @https://www.instagram.com/vibefusion.cluj/?hl=en). The website will need to offer high maintainability, design system, some form of database, admin panel to be able to edit restaurant menu product details, re-use components, and be able to add new products to the menu. Do your best to create the design system based on the attached image.
+
+The website will need to be responsive and work on all devices.
+
+The website will need to be SEO friendly.
+
+The website will need to be fast and load quickly.
+
+The website will need to be secure and have a SSL certificate.
+
+You can even browse https://eltribut.com/lang-eng/ for inspiration.

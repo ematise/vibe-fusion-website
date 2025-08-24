@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "menu": "Meniu",
+    "about": "Despre Noi",
+    "contact": "Contact",
+    "reservations": "Rezervări",
+    "bookTable": "Rezervă o Masă"
+  },
+  "hero": {
+    "subtitle": "Hai la Vibe!",
+    "description": "",
+    "exploreMenu": "Explorează Meniul",
+    "bookTable": "Rezervă o Masă"
+  },
+  "welcome": {
+    "title": "Bun Venit",
+    "intro": "Bun venit la Vibe, restaurantul care aduce un omagiu gastronomiei care a făcut orașul nostru un loc unic în lume.",
+    "description": "Situat în apropierea mării, oferim vederi spectaculoase ale Mediteranei, aceeași sursă de inspirație care dă viață preparatelor noastre și creează acest loc unic pentru a le savura."
+  },
+  "tryMenu": {
+    "title": "Încearcă Meniul Nostru",
+    "intro": "La Vibe, vei savura rețete gătite cu aceleași tehnici care au fost transmise prin capodoperele lor.",
+    "description": "Cu această pasiune caldă, am adus tradiția noastră culinară la masă, adăugând o notă inovatoare care va surprinde atât localnicii, cât și vizitatorii din toată regiunea Cluj.",
+    "viewMenu": "VEZI MENIUL"
+  },
+  "discoverVenue": {
+    "title": "Descoperă Locația Noastră",
+    "intro": "Inspirat de povești și legende, spațiul nostru este rezultatul muncii unor arhitecți renumiți.",
+    "description1": "Aici, fiecare detaliu a fost conceput cu grijă, reinterpretând modernismul care a lăsat o amprentă de neșters asupra orașului nostru.",
+    "description2": "Combinația acestor elemente estetice constituie un adevărat omagiu pentru una dintre marile referințe în istoria arhitecturii."
+  },
+  "footer": {
+    "description": "Experimentează o cină excepțională în inima Cluj-Napoca, unde măiestria culinară întâlnește ospitalitatea caldă.",
+    "contact": "Contact",
+    "location": "Cluj-Napoca, România",
+    "openingHours": "Program",
+    "monday": "Luni-Joi",
+    "tuesday": "Marți",
+    "wednesday": "Miercuri", 
+    "thursday": "Joi",
+    "friday": "Vineri",
+    "saturday": "Sâmbătă",
+    "sunday": "Duminică",
+    "mondayToSunday": "Luni - Duminică",
+    "tuesdayToThursday": "Marți - Joi",
+    "quickLinks": "Link-uri Rapide",
+    "menu": "Meniu",
+    "reservations": "Rezervări",
+    "about": "Despre Noi",
+    "rights": "© 2024 Vibe. Toate drepturile rezervate."
+  },
+  "admin": {
+    "dashboard": "Panou de Control",
+    "welcome": "Bun venit",
+    "viewWebsite": "Vezi Site-ul",
+    "menuManagement": "Gestionare Meniu",
+    "totalItems": "Total Produse",
+    "categories": "Categorii",
+    "messages": "Mesaje",
+    "login": "Autentificare",
+    "email": "Email",
+    "password": "Parolă",
+    "signIn": "Conectează-te"
+  }
+} 

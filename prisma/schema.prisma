@@ -1,0 +1,116 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("USER")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  description String?
+  image       String?
+  order       Int       @default(0)
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  menuItems   MenuItem[]
+
+  @@map("categories")
+}
+
+model MenuItem {
+  id          String    @id @default(cuid())
+  name        String
+  description String
+  price       Float
+  image       String?
+  ingredients String?   // JSON string of ingredients array
+  allergens   String?   // JSON string of allergens array
+  isAvailable Boolean   @default(true)
+  isVegetarian Boolean  @default(false)
+  isVegan     Boolean   @default(false)
+  isGlutenFree Boolean @default(false)
+  spiceLevel  Int       @default(0) // 0-5 scale
+  calories    Int?
+  prepTime    Int?      // in minutes
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  categoryId  String
+  category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@map("menu_items")
+}
+
+model Reservation {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  phone       String
+  date        DateTime
+  time        String
+  guests      Int
+  message     String?
+  status      String   @default("PENDING")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("reservations")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_messages")
+}
+
+model Settings {
+  id              String   @id @default(cuid())
+  restaurantName  String   @default("Vibe Fusion")
+  description     String?
+  address         String?
+  phone           String?
+  email           String?
+  website         String?
+  instagram       String?
+  facebook        String?
+  openingHours    String?  // JSON string of opening hours
+  isOpen          Boolean  @default(true)
+  deliveryFee     Float?
+  minOrderAmount  Float?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("settings")
+}
+
+// Note: SQLite doesn't support enums, so we use string constants
+// Role: "USER" | "ADMIN"
+// ReservationStatus: "PENDING" | "CONFIRMED" | "CANCELLED" | "COMPLETED" 

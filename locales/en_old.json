@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "reservations": "Reservations",
+    "bookTable": "Book a Table"
+  },
+  "hero": {
+    "subtitle": "Exceptional Dining Experience",
+    "description": "Welcome to Vibe, where culinary artistry meets warm hospitality in the heart of Cluj-Napoca. Discover our carefully crafted menu featuring the finest ingredients and innovative presentations.",
+    "exploreMenu": "Explore Menu",
+    "bookTable": "Book a Table"
+  },
+  "welcome": {
+    "title": "Welcome",
+    "intro": "Welcome to Vibe, the restaurant that pays tribute to the gastronomy that made our city a unique place in the world.",
+    "description": "Located by the sea, we offer spectacular views of the Mediterranean, the same source of inspiration that gives life to our dishes and creates this unique place to enjoy them."
+  },
+  "tryMenu": {
+    "title": "Try Our Menu",
+    "intro": "At Vibe, you will enjoy recipes cooked with the same techniques that have been handed down through their masterpieces.",
+    "description": "With this warm passion, we have taken our culinary tradition to the table, adding an innovative touch that will surprise both locals and visitors from all over Cluj and the surrounding region.",
+    "viewMenu": "VIEW THE MENU"
+  },
+  "discoverVenue": {
+    "title": "Discover Our Venue",
+    "intro": "Inspired by stories and legends, our space is the result of the work of renowned architects.",
+    "description1": "Here, every detail has been carefully designed, reinterpreting the modernism that has left an indelible mark on our city.",
+    "description2": "The combination of these aesthetic constitutes a true tribute to one of the great references in architectural history."
+  },
+  "footer": {
+    "description": "Experience exceptional dining in the heart of Cluj-Napoca, where culinary mastery meets warm hospitality.",
+    "contact": "Contact",
+    "location": "Cluj-Napoca, Romania",
+    "openingHours": "Opening Hours",
+    "monday": "Monday-Thu",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "mondayToSunday": "Monday - Sunday",
+    "tuesdayToThursday": "Tuesday - Thursday",
+    "quickLinks": "Quick Links",
+    "menu": "Menu",
+    "reservations": "Reservations",
+    "about": "About Us",
+    "rights": "© 2024 Vibe. All rights reserved."
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "welcome": "Welcome",
+    "viewWebsite": "View Website",
+    "menuManagement": "Menu Management",
+    "totalItems": "Total Menu Items",
+    "categories": "Categories",
+    "messages": "Messages",
+    "login": "Admin Login",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In"
+  }
+} 
