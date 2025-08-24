@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ['instagram.com'],
+    unoptimized: true,
   },
   experimental: {
     outputFileTracingExcludes: {
