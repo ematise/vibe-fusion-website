@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Menu, Users, MessageSquare, Settings } from "lucide-react"
@@ -36,9 +37,11 @@ export default function AdminDashboard() {
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
               <div className="bg-brand-primary px-3 py-2 rounded flex items-center">
-                <img 
+                <Image 
                   src="/vibe-logo-white-transparent-bg.png" 
                   alt="Vibe Admin" 
+                  width={32}
+                  height={32}
                   className="h-8 w-auto mr-2"
                 />
                 <div className="text-white text-xs tracking-widest uppercase">admin</div>
