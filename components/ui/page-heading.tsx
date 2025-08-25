@@ -47,7 +47,7 @@ export function PageHeading({
     <H2 
       className={className}
       variant={variant}
-      size={size}
+      size={size as 'sm' | 'md' | 'lg' | 'xl'}
       align={align}
     >
       {children}

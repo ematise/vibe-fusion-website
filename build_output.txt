@@ -1,0 +1,11 @@
+[31m[1mInternal Error[22m[39m: vibe-fusion-restaurant@workspace:.: This package doesn't seem to be present in your lockfile; run "yarn install" to update the lockfile
+    at jR.getCandidates (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:204:8149)
+    at em.getCandidates (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:141:1311)
+    at C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:209:8420
+    at qE (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:140:54028)
+    at dt (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:209:8400)
+    at async Promise.allSettled (index 0)
+    at async Uu (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:140:53356)
+    at async C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:209:9166
+    at async Yi.startProgressPromise (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:140:140548)
+    at async t.resolveEverything (C:\Users\Emanuel\.yarn\releases\yarn-4.9.2.cjs:209:7138)

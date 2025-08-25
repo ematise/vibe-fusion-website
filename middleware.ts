@@ -14,12 +14,12 @@ function getLocale(request: NextRequest): string {
   // Try to get locale from Accept-Language header
   const acceptLanguage = request.headers.get('accept-language')
   
-  // Simple locale detection from Accept-Language
+  // Simple locale detection from Accept-Language - prioritize Romanian first
   if (acceptLanguage) {
-    if (acceptLanguage.includes('en')) {
-      return 'en'
-    } else if (acceptLanguage.includes('ro')) {
+    if (acceptLanguage.includes('ro')) {
       return 'ro'
+    } else if (acceptLanguage.includes('en')) {
+      return 'en'
     }
   }
 
