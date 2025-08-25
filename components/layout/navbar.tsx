@@ -16,12 +16,20 @@ export function Navbar() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
+  // Get current locale from pathname
+  const getCurrentLocale = () => {
+    const locale = pathname.split('/')[1]
+    return (locale === 'ro' || locale === 'en') ? locale : 'ro'
+  }
+
+  const currentLocale = getCurrentLocale()
+
   const navItems = [
-    { href: "/", label: t("nav.home") },
-    { href: "/menu", label: t("nav.menu") },
-    { href: "/about", label: t("nav.about") },
-    { href: "/contact", label: t("nav.contact") },
-    { href: "/reservations", label: t("nav.reservations") },
+    { href: `/${currentLocale}`, label: t("nav.home") },
+    { href: `/${currentLocale}/menu`, label: t("nav.menu") },
+    { href: `/${currentLocale}/about`, label: t("nav.about") },
+    { href: `/${currentLocale}/contact`, label: t("nav.contact") },
+    { href: `/${currentLocale}/reservations`, label: t("nav.reservations") },
   ]
 
   return (
@@ -30,7 +38,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link 
-            href="/" 
+            href={`/${currentLocale}`} 
             className="flex items-center"
           >
             <Image 

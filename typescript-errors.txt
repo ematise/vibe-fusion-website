@@ -1,0 +1,20 @@
+[96m.next/types/validator.ts[0m:[93m111[0m:[93m11[0m - [91merror[0m[90m TS1360: [0mType 'typeof import("C:/Work/Vibe Fusion/app/[locale]/layout")' does not satisfy the expected type 'LayoutConfig<"/[locale]">'.
+  Types of property 'default' are incompatible.
+    Type '({ children, params: { locale } }: { children: ReactNode; params: { locale: string; }; }) => Element' is not assignable to type 'ComponentType<LayoutProps<"/[locale]">> | ((props: LayoutProps<"/[locale]">) => void | ReactNode | Promise<void> | Promise<...>)'.
+      Type '({ children, params: { locale } }: { children: ReactNode; params: { locale: string; }; }) => Element' is not assignable to type 'FunctionComponent<LayoutProps<"/[locale]">>'.
+        Types of parameters '__0' and 'props' are incompatible.
+          Type 'LayoutProps<"/[locale]">' is not assignable to type '{ children: ReactNode; params: { locale: string; }; }'.
+            Types of property 'params' are incompatible.
+              Property 'locale' is missing in type 'Promise<{ locale: string; }>' but required in type '{ locale: string; }'.
+
+[7m111[0m   handler satisfies LayoutConfig<"/[locale]">
+[7m   [0m [91m          ~~~~~~~~~[0m
+
+  [96mapp/[locale]/layout.tsx[0m:[93m78[0m:[93m13[0m
+    [7m78[0m   params: { locale: string }
+    [7m  [0m [96m            ~~~~~~[0m
+    'locale' is declared here.
+
+
+Found 1 error in .next/types/validator.ts[90m:111[0m
+

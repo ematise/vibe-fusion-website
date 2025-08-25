@@ -78,8 +78,8 @@ export default function LocaleLayout({
   params: { locale: string }
 }) {
   return (
-    <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
-      <body className={inter.className}>
+    <html lang={locale} className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <LanguageProvider initialLocale={locale as 'ro' | 'en'}>
           {children}
         </LanguageProvider>

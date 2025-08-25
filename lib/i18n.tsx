@@ -27,8 +27,15 @@ export function LanguageProvider({ children, initialLocale = 'ro' }: {
   initialLocale?: Locale 
 }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale)
+  const [isClient, setIsClient] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
+
+  // Initialize client-side state
+  useEffect(() => {
+    setIsClient(true)
+    setLocaleState(initialLocale)
+  }, [initialLocale])
 
   // Get translation function
   const t = (key: string): string => {
@@ -46,8 +53,10 @@ export function LanguageProvider({ children, initialLocale = 'ro' }: {
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale)
     
-    // Save to cookie for middleware
-    document.cookie = `preferred-language=${newLocale}; path=/; max-age=${60 * 60 * 24 * 365}`
+    // Only access document on client-side
+    if (isClient && typeof document !== 'undefined') {
+      document.cookie = `preferred-language=${newLocale}; path=/; max-age=${60 * 60 * 24 * 365}`
+    }
     
     // Update URL to include new locale
     const currentPath = pathname
