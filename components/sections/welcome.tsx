@@ -13,7 +13,7 @@ export function Welcome() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-6">
-            <H2 size="lg" className="mb-6" style={{ color: '#8B6914' }}>
+            <H2 size="lg" className="mb-6 text-[#8B6914]">
               {t("welcome.title")}
             </H2>
             <p className="text-lg text-gray-700 leading-relaxed">

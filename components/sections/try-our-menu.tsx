@@ -27,7 +27,7 @@ export function TryOurMenu() {
 
           {/* Content */}
           <div className="space-y-6">
-            <H2 size="lg" className="mb-6" style={{ color: '#8B6914' }}>
+            <H2 size="lg" className="mb-6 text-[#8B6914]">
               {t("tryMenu.title")}
             </H2>
             <p className="text-lg text-gray-700 leading-relaxed">

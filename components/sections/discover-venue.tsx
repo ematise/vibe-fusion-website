@@ -12,7 +12,7 @@ export function DiscoverVenue() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <H2 size="lg" className="mb-8" style={{ color: '#8B6914' }}>
+          <H2 size="lg" className="mb-8 text-[#8B6914]">
             {t("discoverVenue.title")}
           </H2>
         </div>
