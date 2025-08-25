@@ -40,6 +40,16 @@
     "happyCustomers": "1000+",
     "googleRating": "4.9/5"
   },
+  "menu": {
+    "selectLocation": "Choose Location",
+    "selectLocationDescription": "Select the restaurant to see the specific menu",
+    "clujLocation": "Cluj-Napoca",
+    "brasovLocation": "Brașov",
+    "title": "Our Menu",
+    "description": "Discover our carefully crafted dishes and drinks",
+    "hero": "Delicious food with vibes",
+    "items": "items"
+  },
   "contact": {
     "title": "Visit Us",
     "description": "Come experience the vibrant atmosphere and exceptional cuisine at our locations. We can't wait to welcome you to the Vibe experience.",
@@ -56,12 +66,6 @@
     "sunday": "Sunday",
     "followUs": "Follow Us",
     "followDescription": "Follow us for updates and behind-the-scenes content"
-  },
-  "menu": {
-    "title": "Our Menu",
-    "description": "Discover our carefully crafted dishes and beverages",
-    "hero": "Delicious food with vibes",
-    "items": "items"
   },
   "footer": {
     "description": "Experience exceptional dining in the heart of Cluj-Napoca, where culinary mastery meets warm hospitality.",

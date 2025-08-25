@@ -40,6 +40,16 @@
     "happyCustomers": "1000+",
     "googleRating": "4.9/5"
   },
+  "menu": {
+    "selectLocation": "Alege Locația",
+    "selectLocationDescription": "Selectează restaurantul pentru a vedea meniul specific",
+    "clujLocation": "Cluj-Napoca",
+    "brasovLocation": "Brașov",
+    "title": "Meniul Nostru",
+    "description": "Descoperă preparatele și băuturile noastre atent create",
+    "hero": "Delicious food with vibes",
+    "items": "produse"
+  },
   "contact": {
     "title": "Vizitează-ne",
     "description": "Vino să experimentezi atmosfera vibrantă și bucătăria excepțională la locațiile noastre. Abia așteptăm să te primim în experiența Vibe.",
@@ -56,12 +66,6 @@
     "sunday": "Duminică",
     "followUs": "Urmărește-ne",
     "followDescription": "Urmărește-ne pentru actualizări și conținut din culise"
-  },
-  "menu": {
-    "title": "Meniul Nostru",
-    "description": "Descoperă preparatele și băuturile noastre atent create",
-    "hero": "Delicious food with vibes",
-    "items": "produse"
   },
   "footer": {
     "description": "Food with vibes",

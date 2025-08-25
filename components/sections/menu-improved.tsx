@@ -174,10 +174,10 @@ export function MenuImproved() {
             <div className="container mx-auto px-4 py-12">
               <div className="text-center mb-8">
                 <H2 size="lg" weight="bold" className="mb-4 text-center">
-                  Alege Locația
+                  {t("menu.selectLocation")}
                 </H2>
                 <p className="text-gray-600 text-lg">
-                  Selectează restaurantul pentru a vedea meniul specific
+                  {t("menu.selectLocationDescription")}
                 </p>
               </div>
 
@@ -197,7 +197,7 @@ export function MenuImproved() {
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <div className="flex items-center mb-2">
                         <MapPin className="h-5 w-5 mr-2" />
-                        <H3 size="lg" weight="bold" className="text-white mb-0">Cluj-Napoca</H3>
+                        <H3 size="lg" weight="bold" className="text-white mb-0">{t("menu.clujLocation")}</H3>
                       </div>
                       <p className="text-gray-200 text-sm">Strada Zorilor 25</p>
                     </div>
@@ -219,7 +219,7 @@ export function MenuImproved() {
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <div className="flex items-center mb-2">
                         <MapPin className="h-5 w-5 mr-2" />
-                        <H3 size="lg" weight="bold" className="text-white mb-0">Brașov</H3>
+                        <H3 size="lg" weight="bold" className="text-white mb-0">{t("menu.brasovLocation")}</H3>
                       </div>
                       <p className="text-gray-200 text-sm">Strada Valentin Wagner 4</p>
                     </div>
@@ -244,7 +244,7 @@ export function MenuImproved() {
                   <ArrowLeft className="h-4 w-4" />
                 </Button>
                 <span className="font-semibold text-lg">
-                  {selectedLocation === 'cluj' ? 'Cluj-Napoca' : 'Brașov'}
+                  {selectedLocation === 'cluj' ? t("menu.clujLocation") : t("menu.brasovLocation")}
                 </span>
               </div>
 

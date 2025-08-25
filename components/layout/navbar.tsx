@@ -53,9 +53,8 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => {
-              // Remove locale prefix from pathname for comparison
-              const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/'
-              const isActive = pathWithoutLocale === item.href || (item.href === '/menu' && pathWithoutLocale.includes('/menu'))
+              // Compare full pathname with locale-aware href
+              const isActive = pathname === item.href || (item.href.includes('/menu') && pathname.includes('/menu'))
               return (
                 <Link
                   key={item.href}
@@ -97,9 +96,8 @@ export function Navbar() {
           <div className="md:hidden py-4 border-t border-white/20">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => {
-                // Remove locale prefix from pathname for comparison
-                const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/'
-                const isActive = pathWithoutLocale === item.href || (item.href === '/menu' && pathWithoutLocale.includes('/menu'))
+                // Compare full pathname with locale-aware href
+                const isActive = pathname === item.href || (item.href.includes('/menu') && pathname.includes('/menu'))
                 return (
                   <Link
                     key={item.href}
