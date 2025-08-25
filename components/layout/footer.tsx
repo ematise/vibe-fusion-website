@@ -4,13 +4,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
+import { H3 } from "@/components/ui/headings"
 
 export function Footer() {
   const { t } = useTranslation()
 
   return (
     <footer className="bg-brand-primary text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-8 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Restaurant Info */}
           <div className="space-y-6 pr-6 md:col-span-2">
@@ -24,15 +25,11 @@ export function Footer() {
               />
 
             </div>
-
-            <p className="text-gray-100 mt-8">
-              {t("footer.description")}
-            </p>
           </div>
 
           {/* Cluj Location */}
           <div className="space-y-4 mt-8">
-            <h4 className="text-lg font-semibold text-gray-50">Cluj</h4>
+            <H3 variant="accent" className="text-gray-50">Cluj</H3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-50 mt-0.5 flex-shrink-0" />
@@ -57,10 +54,10 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-50 flex-shrink-0" />
                 <Link 
-                  href="mailto:cluj@vibefusion.com"
+                  href="mailto:cluj@vibefusion.ro"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
-                  cluj@vibefusion.com
+                  cluj@vibefusion.ro
                 </Link>
               </div>
               <div className="flex items-center space-x-2 mt-3">
@@ -86,7 +83,7 @@ export function Footer() {
 
           {/* Brasov Location */}
           <div className="space-y-4 mt-8">
-            <h4 className="text-lg font-semibold text-gray-50">Brașov</h4>
+            <H3 variant="accent" className="text-gray-50">Brașov</H3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-50 mt-0.5 flex-shrink-0" />
@@ -111,10 +108,10 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-50 flex-shrink-0" />
                 <Link 
-                  href="mailto:brasov@vibefusion.com"
+                  href="mailto:brasov@vibefusion.ro"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
-                  brasov@vibefusion.com
+                  brasov@vibefusion.ro
                 </Link>
               </div>
               <div className="flex items-center space-x-2 mt-3">

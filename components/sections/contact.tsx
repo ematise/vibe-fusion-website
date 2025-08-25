@@ -5,7 +5,9 @@ import { motion } from "framer-motion"
 import { MapPin, Phone, Mail, Instagram, Clock, Send } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { PageHeading } from "@/components/ui/page-heading"
 import { useTranslation } from "@/lib/i18n"
+import { H1, H2, H3 } from "@/components/ui/headings"
 
 export function Contact() {
   const { t } = useTranslation()
@@ -50,9 +52,9 @@ export function Contact() {
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="!text-2xl !md:text-4xl font-semibold text-white text-center drop-shadow-lg">
+          <H1 size="lg" weight="semibold" align="center" className="text-white drop-shadow-lg">
             {t("contactPage.heroTitle")}
-          </h1>
+          </H1>
         </div>
       </div>
 
@@ -66,9 +68,9 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl font-bold text-brand-dark mb-6">
+                <H2 size="md" weight="bold" className="mb-6">
                   {t("contactPage.locationsTitle")}
-                </h2>
+                </H2>
               </motion.div>
 
               {/* Cluj Location */}
@@ -78,7 +80,7 @@ export function Contact() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="bg-gray-50 rounded-2xl p-6 space-y-4"
               >
-                <h3 className="text-2xl font-semibold text-brand-primary">Cluj-Napoca</h3>
+                <H3 size="md" weight="semibold" variant="primary">Cluj-Napoca</H3>
                 
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
@@ -101,10 +103,10 @@ export function Contact() {
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-brand-primary flex-shrink-0" />
                   <Link 
-                    href="mailto:cluj@vibefusion.com"
+                    href="mailto:cluj@vibefusion.ro"
                     className="text-gray-800 hover:text-brand-primary transition-colors"
                   >
-                    cluj@vibefusion.com
+                    cluj@vibefusion.ro
                   </Link>
                 </div>
 
@@ -135,7 +137,7 @@ export function Contact() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-gray-50 rounded-2xl p-6 space-y-4"
               >
-                <h3 className="text-2xl font-semibold text-brand-primary">Brașov</h3>
+                <H3 size="md" weight="semibold" variant="primary">Brașov</H3>
                 
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
@@ -158,10 +160,10 @@ export function Contact() {
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-brand-primary flex-shrink-0" />
                   <Link 
-                    href="mailto:brasov@vibefusion.com"
+                    href="mailto:brasov@vibefusion.ro"
                     className="text-gray-800 hover:text-brand-primary transition-colors"
                   >
-                    brasov@vibefusion.com
+                    brasov@vibefusion.ro
                   </Link>
                 </div>
 
@@ -198,9 +200,9 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl font-bold text-brand-dark mb-6">
+                <H2 size="md" weight="bold" className="mb-6">
                   {t("contactPage.formTitle")}
-                </h2>
+                </H2>
               </motion.div>
 
               <motion.form

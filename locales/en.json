@@ -60,7 +60,8 @@
   "menu": {
     "title": "Our Menu",
     "description": "Discover our carefully crafted dishes and beverages",
-    "hero": "Delicious food with vibes"
+    "hero": "Delicious food with vibes",
+    "items": "items"
   },
   "footer": {
     "description": "Experience exceptional dining in the heart of Cluj-Napoca, where culinary mastery meets warm hospitality.",

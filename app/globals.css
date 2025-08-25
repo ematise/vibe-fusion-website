@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -140,4 +145,35 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Custom branded scrollbar - Alternative approach */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #b6aea1 #E8E0D6;
+  padding-top: 10px;
+  /* Hide default scrollbar for webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  margin-top: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #E8E0D6;
+  margin-top: 10px;
+  /* Force rounded corners with clip-path */
+  clip-path: inset(0 round 4px);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #b6aea1;
+  /* Force rounded corners with clip-path */
+  clip-path: inset(0 round 4px);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8B7D6B;
 }

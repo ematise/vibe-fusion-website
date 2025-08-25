@@ -99,7 +99,7 @@ export default function AdminLogin() {
           
           <div className="mt-4 text-sm text-gray-600 text-center">
             <p>Default admin credentials:</p>
-            <p>Email: admin@vibefusion.com</p>
+            <p>Email: admin@vibefusion.ro</p>
             <p>Password: admin123</p>
           </div>
         </CardContent>

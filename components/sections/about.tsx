@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { PageHeading } from "@/components/ui/page-heading"
+import { H3 } from "@/components/ui/headings"
 import { useTranslation } from "@/lib/i18n"
 import { Coffee, Utensils, Users, Heart, Star, Award } from "lucide-react"
 
@@ -11,7 +13,7 @@ export function About() {
   const { t } = useTranslation()
   
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10">
         <div className="container mx-auto px-4">
@@ -41,14 +43,14 @@ export function About() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div 
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <h2 className="text-4xl font-bold font-serif text-brand-dark mb-6">
+              <PageHeading level="h2">
                 {t("aboutPage.storyTitle")}
-              </h2>
+              </PageHeading>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {t("aboutPage.storyDescription1")}
               </p>
@@ -61,7 +63,7 @@ export function About() {
             </motion.div>
 
             <motion.div 
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               className="relative"
@@ -90,9 +92,9 @@ export function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold font-serif text-brand-dark mb-4">
+            <PageHeading level="h2" className="mb-4">
               {t("aboutPage.productsTitle")}
-            </h2>
+            </PageHeading>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               {t("aboutPage.productsSubtitle")}
             </p>
@@ -113,9 +115,9 @@ export function About() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-brand-dark mb-2">
+              <H3 size="sm" className="mb-2">
                 {t("aboutPage.coffeeTitle")}
-              </h3>
+              </H3>
               <p className="text-gray-600 text-sm">
                 {t("aboutPage.coffeeDescription")}
               </p>
@@ -135,9 +137,9 @@ export function About() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-brand-dark mb-2">
+              <H3 size="sm" className="mb-2">
                 {t("aboutPage.brunchTitle")}
-              </h3>
+              </H3>
               <p className="text-gray-600 text-sm">
                 {t("aboutPage.brunchDescription")}
               </p>
@@ -157,9 +159,9 @@ export function About() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-brand-dark mb-2">
+              <H3 size="sm" className="mb-2">
                 {t("aboutPage.sushiTitle")}
-              </h3>
+              </H3>
               <p className="text-gray-600 text-sm">
                 {t("aboutPage.sushiDescription")}
               </p>
@@ -179,9 +181,9 @@ export function About() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-brand-dark mb-2">
+              <H3 size="sm" className="mb-2">
                 {t("aboutPage.cocktailsTitle")}
-              </h3>
+              </H3>
               <p className="text-gray-600 text-sm">
                 {t("aboutPage.cocktailsDescription")}
               </p>

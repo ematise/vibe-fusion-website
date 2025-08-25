@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/lib/i18n"
+import { H2 } from "@/components/ui/headings"
 
 export function TryOurMenu() {
   const { t } = useTranslation()
@@ -16,7 +17,7 @@ export function TryOurMenu() {
           <div className="relative">
             <div className="relative h-96 lg:h-[400px] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/restaurant/vibe-restaurant-coffe.JPG"
+                src="/restaurant/vibe-restaurant-food.jpeg"
                 alt="Delicious coffee and menu items at Vibe"
                 fill
                 className="object-cover"
@@ -26,9 +27,9 @@ export function TryOurMenu() {
 
           {/* Content */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-serif text-brand-dark mb-6" style={{ color: '#8B6914' }}>
+            <H2 size="lg" className="mb-6" style={{ color: '#8B6914' }}>
               {t("tryMenu.title")}
-            </h2>
+            </H2>
             <p className="text-lg text-gray-700 leading-relaxed">
               {t("tryMenu.intro")}
             </p>

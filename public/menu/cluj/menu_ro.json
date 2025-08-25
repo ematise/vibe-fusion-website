@@ -678,7 +678,8 @@
        "price_ron": 30,
        "spicy": false,
        "image_url": "images/products/mango-sangria/mango-sangria-facf120c.jpeg",
-       "picture_name": "mango-sangria-facf120c.jpeg"
+       "picture_name": "mango-sangria-facf120c.jpeg",
+       "verticalOffset": -12
       },
       {
        "name": "Mango Sangria 1 L",
@@ -735,7 +736,8 @@
        "price_ron": 36,
        "spicy": false,
        "image_url": "images/products/gin-sour/gin-sour-3ded9c24.jpeg",
-       "picture_name": "gin-sour-3ded9c24.jpeg"
+       "picture_name": "gin-sour-3ded9c24.jpeg",
+       "verticalOffset": 15
       },
       {
        "name": "Basil Smash",
@@ -753,7 +755,8 @@
        "price_ron": 34,
        "spicy": false,
        "image_url": "images/products/amaretto-sour/amaretto-sour-c64d1487.jpeg",
-       "picture_name": "amaretto-sour-c64d1487.jpeg"
+       "picture_name": "amaretto-sour-c64d1487.jpeg",
+       "verticalOffset": -18
       },
       {
        "name": "Hugo",
@@ -798,7 +801,8 @@
        "price_ron": 32,
        "spicy": false,
        "image_url": "images/products/gin-tonic/gin-tonic-6d70a474.jpeg",
-       "picture_name": "gin-tonic-6d70a474.jpeg"
+       "picture_name": "gin-tonic-6d70a474.jpeg",
+       "verticalOffset": -8
       },
       {
        "name": "Campari Orange",
@@ -807,7 +811,8 @@
        "price_ron": 30,
        "spicy": false,
        "image_url": "images/products/campari-orange/campari-orange-ec288253.jpeg",
-       "picture_name": "campari-orange-ec288253.jpeg"
+       "picture_name": "campari-orange-ec288253.jpeg",
+       "verticalOffset": 8
       },
       {
        "name": "Gin Fizz",
@@ -816,7 +821,8 @@
        "price_ron": 34,
        "spicy": false,
        "image_url": "images/products/gin-fizz/gin-fizz-ef4d9ef4.jpeg",
-       "picture_name": "gin-fizz-ef4d9ef4.jpeg"
+       "picture_name": "gin-fizz-ef4d9ef4.jpeg",
+       "verticalOffset": -20
       },
       {
        "name": "Pisco Sour",
@@ -843,7 +849,8 @@
        "price_ron": 36,
        "spicy": false,
        "image_url": "images/products/margarita/margarita-8cabd94a.jpeg",
-       "picture_name": "margarita-8cabd94a.jpeg"
+       "picture_name": "margarita-8cabd94a.jpeg",
+       "verticalOffset": 20
       },
       {
        "name": "Mai Tai",
@@ -2814,7 +2821,7 @@
     },
     {
      "name": "Special Rolls",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/special-rolls-8d90a8f0.jpeg",
      "products": [
       {
        "name": "Ebi tempura roll",
@@ -3012,7 +3019,7 @@
     },
     {
      "name": "Fusion Sushi",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/fusion-sushi-9247ec75.jpeg",
      "products": [
       {
        "name": "Salmon fusion sushi",
@@ -3067,7 +3074,7 @@
     },
     {
      "name": "Sets",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/sets-d6829984.jpeg",
      "products": [
       {
        "name": "Nigiri salmon set",
@@ -3138,7 +3145,7 @@
    "subcategories": [
     {
      "name": "Vin / Prosecco la pahar",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-prosecco-la-pahar-1f4f8078.jpeg",
      "products": [
       {
        "name": "Sake Kinryo Junmai ginko indigo",
@@ -3228,7 +3235,7 @@
     },
     {
      "name": "VIN ALB- ROMANIA",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-alb--romania-f7493ddc.jpeg",
      "products": [
       {
        "name": "BALLA GEZA KOLNA",
@@ -3330,7 +3337,7 @@
     },
     {
      "name": "VIN ROSE-ROMANIA",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-rose-romania-dfbad62f.jpeg",
      "products": [
       {
        "name": "SERVE - CUVEE SISSI",
@@ -3381,7 +3388,7 @@
     },
     {
      "name": "VIN ROSU- ROMANIA",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-rosu--romania-d513c2c2.jpeg",
      "products": [
       {
        "name": "AVINCIS - PINOT NOIR",
@@ -3543,7 +3550,7 @@
     },
     {
      "name": "PROSECCO",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/prosecco-872288db.jpeg",
      "products": [
       {
        "name": "SUMMER OFFER : Terre di Marca Doc Bio",
@@ -3582,7 +3589,7 @@
     },
     {
      "name": "CREMANT",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/cremant-0be493c7.jpeg",
      "products": [
       {
        "name": "RHULMANN CREMANT DΓÇÖALSACE BRUT",
@@ -3597,7 +3604,7 @@
     },
     {
      "name": "CHAMPAGNE",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/champagne-9f10a111.jpeg",
      "products": [
       {
        "name": "VEUVE CLICQUOT BRUT",
@@ -3651,7 +3658,7 @@
     },
     {
      "name": "VIN ALB IMPORT",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-alb-import-2d02c716.jpeg",
      "products": [
       {
        "name": "LA PRUINA - MALVASIA BIANCA",
@@ -3729,7 +3736,7 @@
     },
     {
      "name": "VIN ROSU IMPORT",
-     "image_url": "images/subcategories/japanese-breakfast-6bc01892.jpeg",
+     "image_url": "images/subcategories/vin-rosu-import-006c63a2.jpeg",
      "products": [
       {
        "name": "F'AUTOR AURORE RARA NEAGRA",

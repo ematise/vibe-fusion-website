@@ -58,7 +58,7 @@ A modern, full-stack restaurant and bar website built with Next.js 14, featuring
    DATABASE_URL="file:./db.sqlite"
    NEXTAUTH_SECRET="your-secret-key-here-change-in-production"
    NEXTAUTH_URL="http://localhost:3000"
-   ADMIN_EMAIL="admin@vibefusion.com"
+   ADMIN_EMAIL="admin@vibefusion.ro"
    ADMIN_PASSWORD="admin123"
    ```
 
@@ -119,7 +119,7 @@ Access the website in different languages:
 ### Admin Panel
 1. **Access Admin**: Navigate to [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
 2. **Login Credentials**:
-   - Email: `admin@vibefusion.com`
+   - Email: `admin@vibefusion.ro`
    - Password: `admin123`
 3. **Dashboard**: View statistics and access management features
 4. **Menu Management**: Add, edit, and delete menu items

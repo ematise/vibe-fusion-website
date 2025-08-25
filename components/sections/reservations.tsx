@@ -5,7 +5,9 @@ import { motion } from "framer-motion"
 import { MapPin, Calendar, Clock, Users, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { PageHeading } from "@/components/ui/page-heading"
 import { useTranslation } from "@/lib/i18n"
+import { H3, H4 } from "@/components/ui/headings"
 
 export function Reservations() {
   const { t } = useTranslation()
@@ -16,7 +18,7 @@ export function Reservations() {
       name: 'Cluj-Napoca',
       address: 'Strada Zorilor 25, Cluj-Napoca 400535',
       phone: '0723 072 720',
-      email: 'cluj@vibefusion.com',
+      email: 'cluj@vibefusion.ro',
       hours: 'Monday - Sunday: 10:00 - 22:00',
       reservationUrl: 'https://ialoc.ro/restaurante-cluj/vibe-fusion-restaurant-sushi-cluj-rezervari-4167'
     },
@@ -24,7 +26,7 @@ export function Reservations() {
       name: 'Brașov',
       address: 'Strada Valentin Wagner 4, Brașov 500031',
       phone: '0736 924 117',
-      email: 'brasov@vibefusion.com',
+      email: 'brasov@vibefusion.ro',
       hours: 'Monday: 11:00 - 22:00, Friday: 11:00 - 22:30, Saturday: 12:00 - 22:30, Sunday: 12:00 - 22:00',
       reservationUrl: 'https://ialoc.ro/restaurante-brasov/vibe-restaurant-sushi-brasov-cocktail-bar-rezervari-4402'
     }
@@ -43,30 +45,19 @@ export function Reservations() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="!text-2xl !md:text-4xl font-semibold text-white text-center drop-shadow-lg">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col text-center items-center justify-center">
+          <PageHeading level="h1" className="text-white text-center drop-shadow-lg">
             {t("reservationsPage.heroTitle")}
-          </h1>
+          </PageHeading>
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto font-light">
+            {t("reservationsPage.subtitle")}
+          </p>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8 pt-0">
         <div className="max-w-4xl mx-auto">
-          
-          {/* Introduction */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-brand-dark mb-4">
-              {t("reservationsPage.title")}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {t("reservationsPage.subtitle")}
-            </p>
-          </motion.div>
+
 
           {/* Location Selection */}
           <motion.div
@@ -75,9 +66,9 @@ export function Reservations() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mb-8"
           >
-            <h3 className="text-xl font-semibold text-brand-dark mb-4 text-center">
+            <H3 size="sm" weight="semibold" align="center" className="mb-4">
               {t("reservationsPage.selectLocation")}
-            </h3>
+            </H3>
             <div className="flex justify-center gap-4">
               <button
                 onClick={() => setSelectedLocation('cluj')}
@@ -114,9 +105,9 @@ export function Reservations() {
               
               {/* Location Details */}
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-brand-primary">
+                <H3 size="md" weight="semibold" variant="primary">
                   Vibe Fusion {currentLocation.name}
-                </h3>
+                </H3>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -149,9 +140,9 @@ export function Reservations() {
               <div className="flex flex-col justify-center space-y-6">
                 <div className="text-center">
                   <Calendar className="h-16 w-16 text-brand-primary mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold text-brand-dark mb-2">
+                  <H4 size="md" weight="semibold" className="mb-2">
                     {t("reservationsPage.readyToBook")}
-                  </h4>
+                  </H4>
                   <p className="text-gray-600 mb-6">
                     {t("reservationsPage.bookingDescription")}
                   </p>
@@ -180,9 +171,9 @@ export function Reservations() {
           >
             <div className="text-center p-6 bg-white rounded-xl border border-gray-200">
               <Clock className="h-12 w-12 text-brand-primary mx-auto mb-4" />
-              <h4 className="font-semibold text-brand-dark mb-2">
+              <H4 weight="semibold" className="mb-2">
                 {t("reservationsPage.advanceBooking")}
-              </h4>
+              </H4>
               <p className="text-gray-600 text-sm">
                 {t("reservationsPage.advanceBookingDescription")}
               </p>
@@ -190,9 +181,9 @@ export function Reservations() {
 
             <div className="text-center p-6 bg-white rounded-xl border border-gray-200">
               <Users className="h-12 w-12 text-brand-primary mx-auto mb-4" />
-              <h4 className="font-semibold text-brand-dark mb-2">
+              <H4 weight="semibold" className="mb-2">
                 {t("reservationsPage.groupBookings")}
-              </h4>
+              </H4>
               <p className="text-gray-600 text-sm">
                 {t("reservationsPage.groupBookingsDescription")}
               </p>
@@ -200,9 +191,9 @@ export function Reservations() {
 
             <div className="text-center p-6 bg-white rounded-xl border border-gray-200">
               <Calendar className="h-12 w-12 text-brand-primary mx-auto mb-4" />
-              <h4 className="font-semibold text-brand-dark mb-2">
+              <H4 weight="semibold" className="mb-2">
                 {t("reservationsPage.specialEvents")}
-              </h4>
+              </H4>
               <p className="text-gray-600 text-sm">
                 {t("reservationsPage.specialEventsDescription")}
               </p>
@@ -216,9 +207,9 @@ export function Reservations() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center"
           >
-            <h3 className="text-xl font-semibold text-brand-dark mb-4">
+            <H3 size="sm" weight="semibold" className="mb-4">
               {t("reservationsPage.needHelp")}
-            </h3>
+            </H3>
             <p className="text-gray-600 mb-4">
               {t("reservationsPage.contactDescription")}
             </p>

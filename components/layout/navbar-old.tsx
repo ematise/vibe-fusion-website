@@ -87,7 +87,7 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-2">
+              <div>
                 <LanguageSwitcher />
               </div>
               <div className="pt-2">

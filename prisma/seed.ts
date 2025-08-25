@@ -10,10 +10,10 @@ async function main() {
   const hashedPassword = await bcrypt.hash(process.env.ADMIN_PASSWORD || 'admin123', 10)
   
   const admin = await prisma.user.upsert({
-    where: { email: process.env.ADMIN_EMAIL || 'admin@vibefusion.com' },
+    where: { email: process.env.ADMIN_EMAIL || 'admin@vibefusion.ro' },
     update: {},
     create: {
-      email: process.env.ADMIN_EMAIL || 'admin@vibefusion.com',
+      email: process.env.ADMIN_EMAIL || 'admin@vibefusion.ro',
       password: hashedPassword,
       name: 'Admin',
       role: 'ADMIN',
@@ -166,7 +166,7 @@ async function main() {
       description: 'Experience exceptional dining at Vibe, where culinary artistry meets warm hospitality in Cluj-Napoca.',
       address: process.env.RESTAURANT_ADDRESS || 'Cluj-Napoca, Romania',
       phone: process.env.RESTAURANT_PHONE || '+40 123 456 789',
-      email: process.env.RESTAURANT_EMAIL || 'info@vibefusion.com',
+      email: process.env.RESTAURANT_EMAIL || 'info@vibefusion.ro',
       instagram: 'https://www.instagram.com/vibefusion.cluj/',
       openingHours: JSON.stringify({
         monday: { open: '11:00', close: '22:00', closed: false },

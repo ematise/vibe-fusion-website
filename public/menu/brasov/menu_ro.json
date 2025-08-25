@@ -1,0 +1,2300 @@
+{
+  "restaurant": {
+    "name": "Unknown",
+    "source_url": "https://oddmenu.com/ro/p/vibe-brasov",
+    "locale": "ro",
+    "scraped_at": "2025-08-25T13:32:09.700Z"
+  },
+  "menus": [
+    {
+      "name": "Drinks",
+      "subcategories": [
+        {
+          "name": "Coffee & Tea",
+          "image_url": "images/subcategories/coffee-tea-65d4c031.jpeg",
+          "products": [
+            {
+              "name": "Espresso",
+              "description": null,
+              "weight": {
+                "value": 25,
+                "unit": "ml"
+              },
+              "price_ron": 14,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Espresso dublu",
+              "description": null,
+              "weight": {
+                "value": 50,
+                "unit": "ml"
+              },
+              "price_ron": 16,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Macchiato",
+              "description": null,
+              "weight": {
+                "value": 50,
+                "unit": "ml"
+              },
+              "price_ron": 15,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Espresso Tonic",
+              "description": "18 g cafea, 200 ml apă tonică",
+              "weight": {
+                "value": 250,
+                "unit": "ml"
+              },
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Americano",
+              "description": null,
+              "weight": {
+                "value": 50,
+                "unit": "ml"
+              },
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Cappuccino",
+              "description": null,
+              "weight": {
+                "value": 120,
+                "unit": "ml"
+              },
+              "price_ron": 17,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Flat White",
+              "description": null,
+              "weight": {
+                "value": 150,
+                "unit": "ml"
+              },
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Latte Macchiato",
+              "description": null,
+              "weight": {
+                "value": 200,
+                "unit": "ml"
+              },
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Ceai Verde/Negru/Fructe/Musetel",
+              "description": null,
+              "weight": {
+                "value": 250,
+                "unit": "ml"
+              },
+              "price_ron": 14,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Soft Drinks",
+          "image_url": "images/subcategories/soft-drinks-39322df0.jpeg",
+          "products": [
+            {
+              "name": "Coca-Cola",
+              "description": null,
+              "weight": null,
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Fanta",
+              "description": null,
+              "weight": null,
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Schweppes Mandarin / Tonic / Bitter",
+              "description": null,
+              "weight": null,
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Apă plată Dorna",
+              "description": null,
+              "weight": null,
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Apă carbogazoasă Dorna",
+              "description": null,
+              "weight": null,
+              "price_ron": 13,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Redbull",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Aqua Panna",
+              "description": null,
+              "weight": null,
+              "price_ron": 16,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "San Pellegrino Ginger Beer",
+              "description": null,
+              "weight": null,
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Fentimans Ginger Beer",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Fentimans Tonic Water",
+              "description": null,
+              "weight": null,
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Fentimans Yuzu Tonic",
+              "description": null,
+              "weight": null,
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Healthy Drinks",
+          "image_url": "images/subcategories/healthy-drinks-a4b52256.jpeg",
+          "products": [
+            {
+              "name": "Mandarin-Vibe Limonade",
+              "description": "lamâie, mandarine, busuioc, ghimbir, zahăr apă, nucșoară",
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/products/mandarin-vibe-limonade/mandarin-vibe-limonade-6a963eed.jpeg",
+              "picture_name": "mandarin-vibe-limonade-6a963eed.jpeg"
+            },
+            {
+              "name": "Basil-Vibe Limonade",
+              "description": "lamâie, castravete, mentă, ghimbir, zahăr, apă",
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/products/basil-vibe-limonade/basil-vibe-limonade-43c2f7f0.jpeg",
+              "picture_name": "basil-vibe-limonade-43c2f7f0.jpeg"
+            },
+            {
+              "name": "Classic Limonade",
+              "description": "lamâie, apă, mentă, zahăr",
+              "weight": null,
+              "price_ron": 26,
+              "spicy": false,
+              "image_url": "images/products/classic-limonade/classic-limonade-97291497.jpeg",
+              "picture_name": "classic-limonade-97291497.jpeg"
+            },
+            {
+              "name": "Orange fresh",
+              "description": null,
+              "weight": null,
+              "price_ron": 26,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Grepefruit fresh",
+              "description": null,
+              "weight": null,
+              "price_ron": 26,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Beer",
+          "image_url": "images/subcategories/beer-44d9e5e2.jpeg",
+          "products": [
+            {
+              "name": "Weihenstephan",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Carlsberg",
+              "description": null,
+              "weight": null,
+              "price_ron": 21,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bucur bruna",
+              "description": null,
+              "weight": null,
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bucur blonda",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tuborg",
+              "description": null,
+              "weight": null,
+              "price_ron": 17,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Stella Artois fara alcool",
+              "description": null,
+              "weight": null,
+              "price_ron": 15,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Corona",
+              "description": null,
+              "weight": null,
+              "price_ron": 19,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Cocktails",
+          "image_url": "images/subcategories/cocktails-00a39cff.jpeg",
+          "products": [
+            {
+              "name": "French Martini",
+              "description": "Tanqueray, Chambord, pineapple juice",
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pornstar Martini",
+              "description": "vodka Skyy, passion fruit liqueur, passion fruit puree, fresh lime juice, prosecco, vanilla syrup",
+              "weight": null,
+              "price_ron": 40,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Gin sour",
+              "description": "Tanqueray, simple syrup, lemon juice, pasteurized egg white",
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Basil Smash",
+              "description": "Tanqueray, lemon juice, basil, simple syrup",
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Amaretto sour",
+              "description": "Disaronno,  lemon juice, simple syrup, pasteurized egg white",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Hugo",
+              "description": "elderflower syrup, soda, prosecco, mint, lime",
+              "weight": null,
+              "price_ron": 37,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Cosmopolitan",
+              "description": "Skyy, Cointreau, lime juice, cranberry",
+              "weight": null,
+              "price_ron": 37,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Aperol spritz",
+              "description": "Aperol, prosecco, soda, orange juice",
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Whisky sour",
+              "description": "Bulleit, lemon juice, simple syrup",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Kir Royal",
+              "description": "prosecco, Chambord",
+              "weight": null,
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Gin Tonic",
+              "description": "Tanqueray, tonic",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Campari Orange",
+              "description": "Campari, orange fresh",
+              "weight": null,
+              "price_ron": 29,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Gin Fizz",
+              "description": "Tanqueray, lime juice, simple syrup, soda",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pisco Sour",
+              "description": "Barsol, lime juice, simple syrup",
+              "weight": null,
+              "price_ron": 35,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Daiquiri",
+              "description": "Bacardi Carta Blanca, lime juice, simple syrup",
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Margarita",
+              "description": "Jose Cuervo 1800, triple sec, lime",
+              "weight": null,
+              "price_ron": 42,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Mai Tai",
+              "description": "Bacardi Carta Blanca, triple sec, lime, almond syrup, Capitan Morgan Black Spiced, mint",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Negroni",
+              "description": "Tanqueray, Campari, Vermouth di Torino 1757, orange peel",
+              "weight": null,
+              "price_ron": 44,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Moscow Mule",
+              "description": "Skyy, lime, Fentimans Ginger Beer",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Dark and stormy",
+              "description": "Bacardi Carta Blanca, Capitan Morgan Black Spiced, lime, Fentimans Ginger Beer , Angostura bitter drops",
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Mojito",
+              "description": "Bacardi Carta Blanca, lime, soda, mint",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Royal Chilli Caipirinha",
+              "description": "Pitu cachasa, Chambord, lime, soda, chilli",
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Espresso Martini",
+              "description": "Vodka skyy, coffee liqueur Kahlua, espresso, simple syrup",
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Gin",
+          "image_url": "images/subcategories/gin-4cdcd30f.jpeg",
+          "products": [
+            {
+              "name": "Ukiyo",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Amuerte CoCa Leaf",
+              "description": null,
+              "weight": null,
+              "price_ron": 44,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Scapegrace Gold",
+              "description": null,
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Scapegrace Black",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Gin Mare Capri",
+              "description": null,
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Monkey 47",
+              "description": null,
+              "weight": null,
+              "price_ron": 39,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray No.10",
+              "description": null,
+              "weight": null,
+              "price_ron": 30,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray London Dry",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray Royale",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray Sevilla",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray Rangpur",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Tanqueray Alcohol Free",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Whisky",
+          "image_url": "images/subcategories/whisky-83a33d51.jpeg",
+          "products": [
+            {
+              "name": "Reki",
+              "description": null,
+              "weight": null,
+              "price_ron": 62,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Akashi",
+              "description": null,
+              "weight": null,
+              "price_ron": 42,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Nikka From The Barrel",
+              "description": null,
+              "weight": null,
+              "price_ron": 48,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Nikka Coffey Malt",
+              "description": null,
+              "weight": null,
+              "price_ron": 54,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Hibiki Harmony",
+              "description": null,
+              "weight": null,
+              "price_ron": 72,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Yamazaki Single Malt",
+              "description": null,
+              "weight": null,
+              "price_ron": 160,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Johnnie Walker Black Label",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Ardbeg 10yo Single Malt",
+              "description": null,
+              "weight": null,
+              "price_ron": 42,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Glenlivet 12yo Single Malt",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Jack Daniels Single Barrel",
+              "description": null,
+              "weight": null,
+              "price_ron": 36,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bulleit Bourbon",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bushmills 10yo Single Malt",
+              "description": null,
+              "weight": null,
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Cognac",
+          "image_url": "images/subcategories/cognac-e1f4659c.jpeg",
+          "products": [
+            {
+              "name": "Hennessy VS",
+              "description": null,
+              "weight": null,
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Hennessy VSOP",
+              "description": null,
+              "weight": null,
+              "price_ron": 44,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Hennessy XO",
+              "description": null,
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Courvoisier VS",
+              "description": null,
+              "weight": null,
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Tequila & Mezcal",
+          "image_url": "images/subcategories/tequila-mezcal-ad1727ad.jpeg",
+          "products": [
+            {
+              "name": "Clase Azul Plata",
+              "description": null,
+              "weight": null,
+              "price_ron": 70,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Clase Azul Reposado",
+              "description": null,
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Don Julio Blanco",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Don Julio Reposado",
+              "description": null,
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Jose Cuervo 1800 Blanco",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Jose Cuervo 1800 Reposado",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Zignum Joven",
+              "description": null,
+              "weight": null,
+              "price_ron": 42,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Zignum Reposado",
+              "description": null,
+              "weight": null,
+              "price_ron": 52,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Vodka",
+          "image_url": "images/subcategories/vodka-29770d62.jpeg",
+          "products": [
+            {
+              "name": "Roberto Cavalli Gold",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Grey Goose",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Ciroc",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Ketel One",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Skyy",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Rom",
+          "image_url": "images/subcategories/rom-3f969499.jpeg",
+          "products": [
+            {
+              "name": "El Dorado 15 yo",
+              "description": null,
+              "weight": null,
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Diplomatico Reserva 12 yo",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pampero Aniversario",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Angostura 1919",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Duppy Share XO",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Duppy Share Spiced",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bacardi Carta Blanca",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Capitan Morgan Black Spiced",
+              "description": null,
+              "weight": null,
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Liqueurs & Others",
+          "image_url": "images/subcategories/liqueurs-others-d52f0248.jpeg",
+          "products": [
+            {
+              "name": "Patron XO Cafe",
+              "description": null,
+              "weight": null,
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Golden Eight Pear",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Chambord",
+              "description": null,
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Edinburgh Elderflower",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Edinburgh Rhubarb and Ginger",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Amaretto Disaronno",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Kahlua",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Averna",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Țuica Zetea",
+              "description": null,
+              "weight": null,
+              "price_ron": 44,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Zetea Cocazata",
+              "description": null,
+              "weight": null,
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Exquisite Grappa",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Bran Afinata",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pernod Absinthe",
+              "description": null,
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Vermouth Di Torino 1757",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Aperol",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Campari",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Barsol Pisco Acholado",
+              "description": null,
+              "weight": null,
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pitu Cachaca",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Passoa",
+              "description": null,
+              "weight": null,
+              "price_ron": 18,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sushi",
+      "subcategories": [
+        {
+          "name": "Nigiri",
+          "image_url": "images/subcategories/nigiri-61824ae5.jpeg",
+          "products": [
+            {
+              "name": "Salmon  nigiri",
+              "description": "somon, orez",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": "images/subcategories/nigiri-61824ae5.jpeg",
+              "picture_name": "nigiri-61824ae5.jpeg"
+            },
+            {
+              "name": "Tuna nigiri",
+              "description": "ton, orez",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/products/tuna-nigiri/tuna-nigiri-651d878f.jpeg",
+              "picture_name": "tuna-nigiri-651d878f.jpeg"
+            },
+            {
+              "name": "Seabass nigiri",
+              "description": "biban, orez",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 22,
+              "spicy": false,
+              "image_url": "images/products/seabass-nigiri/seabass-nigiri-896236b6.jpeg",
+              "picture_name": "seabass-nigiri-896236b6.jpeg"
+            },
+            {
+              "name": "Avocado nigiri",
+              "description": "avocado, orez",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 20,
+              "spicy": false,
+              "image_url": "images/products/avocado-nigiri/avocado-nigiri-9dfe59d3.jpeg",
+              "picture_name": "avocado-nigiri-9dfe59d3.jpeg"
+            },
+            {
+              "name": "Flamed nigiri",
+              "description": "somon, orez, sos teriyaki",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": "images/products/flamed-nigiri/flamed-nigiri-341a6358.jpeg",
+              "picture_name": "flamed-nigiri-341a6358.jpeg"
+            },
+            {
+              "name": "Flamed spicy nigiri",
+              "description": "somon, orez, sos picant",
+              "weight": {
+                "value": 60,
+                "unit": "g"
+              },
+              "price_ron": 24,
+              "spicy": true,
+              "image_url": "images/products/flamed-spicy-nigiri/flamed-spicy-nigiri-7dfe5220.jpeg",
+              "picture_name": "flamed-spicy-nigiri-7dfe5220.jpeg"
+            },
+            {
+              "name": "Mixed sashimi",
+              "description": "Ingrediente: ton, somon, biban, salata sashimi Informatii nutritionale 100g: Valoare Energetica (kJ/kcal): 528.7 / 126, Grasimi (g):5.7 din care: Acizi grasi saturati (g) 1.3, Glucide (g): 0.2 din care: Zaharuri (g): 0.1,Proteine (g): 18.5, Sare (g): 0.1",
+              "weight": {
+                "value": 90,
+                "unit": "g"
+              },
+              "price_ron": 54,
+              "spicy": false,
+              "image_url": "images/products/mixed-sashimi/mixed-sashimi-3a53d62a.jpeg",
+              "picture_name": "mixed-sashimi-3a53d62a.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Maki",
+          "image_url": "images/subcategories/maki-a24d3578.jpeg",
+          "products": [
+            {
+              "name": "Salmon maki",
+              "description": "somon, orez, algă nori",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/subcategories/maki-a24d3578.jpeg",
+              "picture_name": "maki-a24d3578.jpeg"
+            },
+            {
+              "name": "Spciy salmon maki",
+              "description": "somon, orez, algă nori, sos picant",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 30,
+              "spicy": true,
+              "image_url": "images/products/spciy-salmon-maki/spciy-salmon-maki-11512d08.jpeg",
+              "picture_name": "spciy-salmon-maki-11512d08.jpeg"
+            },
+            {
+              "name": "Tuna maki",
+              "description": "ton, orez, algă nori",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 30,
+              "spicy": false,
+              "image_url": "images/products/tuna-maki/tuna-maki-c42761b8.jpeg",
+              "picture_name": "tuna-maki-c42761b8.jpeg"
+            },
+            {
+              "name": "Spicy tuna maki",
+              "description": "ton, orez, sos picant, algă nori",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 30,
+              "spicy": true,
+              "image_url": "images/products/spicy-tuna-maki/spicy-tuna-maki-bb6c5b98.jpeg",
+              "picture_name": "spicy-tuna-maki-bb6c5b98.jpeg"
+            },
+            {
+              "name": "Avocado maki",
+              "description": "avocado, orez, algă nori",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": "images/products/avocado-maki/avocado-maki-2bab31b5.jpeg",
+              "picture_name": "avocado-maki-2bab31b5.jpeg"
+            },
+            {
+              "name": "Shrimp maki",
+              "description": "crevete, orez, algă nori",
+              "weight": {
+                "value": 120,
+                "unit": "g"
+              },
+              "price_ron": 30,
+              "spicy": false,
+              "image_url": "images/products/shrimp-maki/shrimp-maki-864d5369.jpeg",
+              "picture_name": "shrimp-maki-864d5369.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Special-rolls",
+          "image_url": "images/subcategories/special-rolls-b1af741f.jpeg",
+          "products": [
+            {
+              "name": "Tuna Roll",
+              "description": "avocado, castravete, ton, susan, alga nori Informatii nutritionale 100g",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 45,
+              "spicy": false,
+              "image_url": "images/products/tuna-roll/tuna-roll-c88300f2.jpeg",
+              "picture_name": "tuna-roll-c88300f2.jpeg"
+            },
+            {
+              "name": "Spicy Tuna Roll",
+              "description": "castravete,ton, ceapa verde, sriracha, avocado, icre tobiko, alga nori Informatii nutritionale 100g:",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 47,
+              "spicy": true,
+              "image_url": "images/products/spicy-tuna-roll/spicy-tuna-roll-25caf38d.jpeg",
+              "picture_name": "spicy-tuna-roll-25caf38d.jpeg"
+            },
+            {
+              "name": "Maguro Roll",
+              "description": "avocado, ton, sriracha, maioneza, ardei iute, alga nori",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 62,
+              "spicy": false,
+              "image_url": "images/products/maguro-roll/maguro-roll-77526637.jpeg",
+              "picture_name": "maguro-roll-77526637.jpeg"
+            },
+            {
+              "name": "Dragon roll",
+              "description": "crevete tempura, orez sushi, icre tobiko, avocado, castravete, maioneză picantă, algă nori",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 54,
+              "spicy": true,
+              "image_url": "images/products/dragon-roll/dragon-roll-b1384b6e.jpeg",
+              "picture_name": "dragon-roll-b1384b6e.jpeg"
+            },
+            {
+              "name": "Rainbow roll",
+              "description": "crevete tempura, orez sushi, somon, ton, biban, brânză Philadelphia, avocado, castravete, algă nori",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 62,
+              "spicy": false,
+              "image_url": "images/products/rainbow-roll/rainbow-roll-f453e837.jpeg",
+              "picture_name": "rainbow-roll-f453e837.jpeg"
+            },
+            {
+              "name": "Flamed salmon roll",
+              "description": "somon, somon flambat, orez sushi, brânză Philadelphia, avocado, castravete, susan, algă nori",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 52,
+              "spicy": false,
+              "image_url": "images/products/flamed-salmon-roll/flamed-salmon-roll-540a712e.jpeg",
+              "picture_name": "flamed-salmon-roll-540a712e.jpeg"
+            },
+            {
+              "name": "Panko salmon roll cu migdale",
+              "description": "somon, orez sushi, brânză Philadelphia, avocado, tempura, migdale, algă nori",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 49,
+              "spicy": false,
+              "image_url": "images/products/panko-salmon-roll-cu-migdale/panko-salmon-roll-cu-migdale-7f9231fe.jpeg",
+              "picture_name": "panko-salmon-roll-cu-migdale-7f9231fe.jpeg"
+            },
+            {
+              "name": "Spicy tuna tempura",
+              "description": "ton, orez sushi, avocado, castravete, ulei chilli, tempura, maioneză picantă, sos teriyaki, algă nori",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 50,
+              "spicy": true,
+              "image_url": "images/products/spicy-tuna-tempura/spicy-tuna-tempura-80ad7695.jpeg",
+              "picture_name": "spicy-tuna-tempura-80ad7695.jpeg"
+            },
+            {
+              "name": "Viper roll",
+              "description": "orez, crevete tempura, avocado, rucola , branza philadelphia, somon , spicy maio, sos teriyaki, germeni brocoli, fire chili Informatii nutritionale 100g:",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 58,
+              "spicy": true,
+              "image_url": "images/products/viper-roll/viper-roll-271f9e69.jpeg",
+              "picture_name": "viper-roll-271f9e69.jpeg"
+            },
+            {
+              "name": "Vibe roll",
+              "description": "crevete, orez sushi, somon, avocado, castravete, sos teriyaki, maioneză picantă, icre tobiko, algă nori",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 58,
+              "spicy": true,
+              "image_url": "images/products/vibe-roll/vibe-roll-6277bfcf.jpeg",
+              "picture_name": "vibe-roll-6277bfcf.jpeg"
+            },
+            {
+              "name": "Ebi tempura roll",
+              "description": "crevete tempura, orez sushi, avocado, castravete, brânză Philadelphia, sos teriyaki, maioneză picantă, ceapă crocantă",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 52,
+              "spicy": true,
+              "image_url": "images/products/ebi-tempura-roll/ebi-tempura-roll-76a560f2.jpeg",
+              "picture_name": "ebi-tempura-roll-76a560f2.jpeg"
+            },
+            {
+              "name": "Philadelphia roll",
+              "description": "orez, somon,avocado, philadelphia,alga Informatii nutritionale 100g",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 47,
+              "spicy": false,
+              "image_url": "images/products/philadelphia-roll/philadelphia-roll-8014742e.jpeg",
+              "picture_name": "philadelphia-roll-8014742e.jpeg"
+            },
+            {
+              "name": "Miami sensation",
+              "description": "orez, algă nori, somon, castravete, avocado, sweet chilli sos teriyaki, crunchy Informatii nutritionale 100g",
+              "weight": {
+                "value": 220,
+                "unit": "g"
+              },
+              "price_ron": 49,
+              "spicy": false,
+              "image_url": "images/products/miami-sensation/miami-sensation-d714b73c.jpeg",
+              "picture_name": "miami-sensation-d714b73c.jpeg"
+            },
+            {
+              "name": "Teriyaki roll",
+              "description": "somon teriyaki, orez sushi, branză Philadelphia, castravete, crunchy, algă nori",
+              "weight": {
+                "value": 200,
+                "unit": "g"
+              },
+              "price_ron": 45,
+              "spicy": false,
+              "image_url": "images/products/teriyaki-roll/teriyaki-roll-900f29d7.jpeg",
+              "picture_name": "teriyaki-roll-900f29d7.jpeg"
+            },
+            {
+              "name": "Kabuki roll",
+              "description": "orez sushi, algă nori, castraveti, avocado, spicy maio, ceapă verde, somon, icre tobiko.",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 56,
+              "spicy": true,
+              "image_url": "images/products/kabuki-roll/kabuki-roll-b3d9b6a3.jpeg",
+              "picture_name": "kabuki-roll-b3d9b6a3.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Sets",
+          "image_url": "images/subcategories/sets-2cd3078c.jpeg",
+          "products": [
+            {
+              "name": "Nigiri salmon set 8",
+              "description": "orez, somon",
+              "weight": {
+                "value": 240,
+                "unit": "g"
+              },
+              "price_ron": 86,
+              "spicy": false,
+              "image_url": "images/subcategories/sets-2cd3078c.jpeg",
+              "picture_name": "sets-2cd3078c.jpeg"
+            },
+            {
+              "name": "Tuna Set",
+              "description": "4x tuna nigiri, tuna maki, tuna roll, vibe tuna roll Informatii nutritionale 100g",
+              "weight": {
+                "value": 680,
+                "unit": "g"
+              },
+              "price_ron": 175,
+              "spicy": false,
+              "image_url": "images/products/tuna-set/tuna-set-f5a586a6.jpeg",
+              "picture_name": "tuna-set-f5a586a6.jpeg"
+            },
+            {
+              "name": "Salmon set",
+              "description": "4x salmon nigiri , salmon maki, teriyaki roll, flamed salmon roll",
+              "weight": {
+                "value": 680,
+                "unit": "g"
+              },
+              "price_ron": 160,
+              "spicy": false,
+              "image_url": "images/products/salmon-set/salmon-set-7cc3cb31.jpeg",
+              "picture_name": "salmon-set-7cc3cb31.jpeg"
+            },
+            {
+              "name": "Special set",
+              "description": "rainbow roll, dragon roll, flamed salmon roll, teriyaki roll",
+              "weight": {
+                "value": 900,
+                "unit": "g"
+              },
+              "price_ron": 185,
+              "spicy": false,
+              "image_url": "images/products/special-set/special-set-27546644.jpeg",
+              "picture_name": "special-set-27546644.jpeg"
+            },
+            {
+              "name": "Tempura set",
+              "description": "dragon roll, panko salmon roll, spicy tuna tempura",
+              "weight": {
+                "value": 640,
+                "unit": "g"
+              },
+              "price_ron": 145,
+              "spicy": true,
+              "image_url": "images/products/tempura-set/tempura-set-d00d872f.jpeg",
+              "picture_name": "tempura-set-d00d872f.jpeg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Food",
+      "subcategories": [
+        {
+          "name": "Antreuri",
+          "image_url": "images/subcategories/antreuri-7ac29b54.jpeg",
+          "products": [
+            {
+              "name": "Edamame Prajite",
+              "description": "edamame, usturoi, togarashi, sare maldon, patrunjel Informatii nutritionale 100g:",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Edamame Pastai",
+              "description": "edamame",
+              "weight": null,
+              "price_ron": 25,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Pui Karaage",
+              "description": "piept de pui, soya, teriyaki, sriracha, togarashi, ceapa verde, susan",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 34,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Salata Wakame",
+              "description": "salata wakame, susan",
+              "weight": null,
+              "price_ron": 25,
+              "spicy": false,
+              "image_url": "images/subcategories/antreuri-7ac29b54.jpeg",
+              "picture_name": "antreuri-7ac29b54.jpeg"
+            },
+            {
+              "name": "Shrimp and Springrolls",
+              "description": "creveți, edamame spring-rolls, iaurt, mentă, pătrunjel, sweet chilli",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 52,
+              "spicy": false,
+              "image_url": "images/products/shrimp-and-springrolls/shrimp-and-springrolls-61730dda.jpeg",
+              "picture_name": "shrimp-and-springrolls-61730dda.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Salate",
+          "image_url": "images/subcategories/salate-7421b237.jpeg",
+          "products": [
+            {
+              "name": "Salată cu pui karaage",
+              "description": "pulpă de pui, valeriană, baby spanac, rucola, salată, roșii cherry, edamame, sos de soia, iaurt, mustar, wasabi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": "images/subcategories/salate-7421b237.jpeg",
+              "picture_name": "salate-7421b237.jpeg"
+            },
+            {
+              "name": "Salata cu halloumi, citrice si dressing de castravete cu menta",
+              "description": "mix de salată, grapefruit, portocală, halloumi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 38,
+              "spicy": false,
+              "image_url": "images/products/salata-cu-halloumi-citrice-si-dressing-de-castravete-cu-menta/salata-cu-halloumi-citrice-si-dressing-de-castravete-cu-menta-87a0793a.jpeg",
+              "picture_name": "salata-cu-halloumi-citrice-si-dressing-de-castravete-cu-menta-87a0793a.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Paste",
+          "image_url": "images/subcategories/paste-a06a91e9.jpeg",
+          "products": [
+            {
+              "name": "Pappardele cu vită și ciuperci shiitake",
+              "description": "Tagliatelle, mușchi de vită, ciuperci shiitake, parmezan, unt, usturoi, pătrunjel proaspăt",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 59,
+              "spicy": false,
+              "image_url": "images/subcategories/paste-a06a91e9.jpeg",
+              "picture_name": "paste-a06a91e9.jpeg"
+            },
+            {
+              "name": "Paccheri cu pui și muguri de pin",
+              "description": "Paccheri, piept de pui, roșii uscate, muguri de pin, baby spanac, unt, vin alb, usturoi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 48,
+              "spicy": false,
+              "image_url": "images/products/paccheri-cu-pui-si-muguri-de-pin/paccheri-cu-pui-si-muguri-de-pin-1daacdd2.jpeg",
+              "picture_name": "paccheri-cu-pui-si-muguri-de-pin-1daacdd2.jpeg"
+            },
+            {
+              "name": "Tagliatelle cu creveți si red curry",
+              "description": "tagliatelle, creveți Black Tiger, zucchini, pătrunjel, usturoi,  red curry, smantana lichida *provenit din produse congelate",
+              "weight": null,
+              "price_ron": 58,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Desert",
+          "image_url": "images/subcategories/desert-60ac6815.jpeg",
+          "products": [
+            {
+              "name": "Carrot cake",
+              "description": "morcovi, ghimbir, nucșoară, scortișoară, vanilie, nuci",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/subcategories/desert-60ac6815.jpeg",
+              "picture_name": "desert-60ac6815.jpeg"
+            },
+            {
+              "name": "Umami bloom",
+              "description": "ciocolata alba, ciocolata neagra, alune de padure, zmeura, soc, fulgi de porumb, soya, miso, pasta de trufe",
+              "weight": null,
+              "price_ron": 30,
+              "spicy": false,
+              "image_url": "images/products/umami-bloom/umami-bloom-11288d6e.jpeg",
+              "picture_name": "umami-bloom-11288d6e.jpeg"
+            },
+            {
+              "name": "Matcha-misu",
+              "description": "mascarpone, capșuni, pișcoturi, matcha",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": "images/products/matcha-misu/matcha-misu-95b8e45e.jpeg",
+              "picture_name": "matcha-misu-95b8e45e.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Extra",
+          "image_url": "images/subcategories/extra-b691d750.jpeg",
+          "products": [
+            {
+              "name": "Sweet  chilli",
+              "description": null,
+              "weight": null,
+              "price_ron": 5,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Sos soia",
+              "description": null,
+              "weight": null,
+              "price_ron": 5,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Sos teriyaki",
+              "description": null,
+              "weight": null,
+              "price_ron": 5,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Maioneza simpla",
+              "description": null,
+              "weight": null,
+              "price_ron": 5,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Maioneza picanta",
+              "description": null,
+              "weight": null,
+              "price_ron": 5,
+              "spicy": true,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ramen & Noodles",
+      "subcategories": [
+        {
+          "name": "Ramen",
+          "image_url": "images/subcategories/ramen-9cad3334.jpeg",
+          "products": [
+            {
+              "name": "Beef Ankake Ramen",
+              "description": "Ingrediente: stock de porc, paste noodles, sos yakibuta, fașii de carne de vită, ou marinat, porumb, alge nori, ceapă verde, usturoi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 52,
+              "spicy": false,
+              "image_url": "images/products/beef-ankake-ramen/beef-ankake-ramen-5c6256e6.jpeg",
+              "picture_name": "beef-ankake-ramen-5c6256e6.jpeg"
+            },
+            {
+              "name": "Karaage Ramen",
+              "description": "Ingrediente: stock de pui, paste noodles, sos yakibuta, pulpă de pui marinat în sos japonez, ou marinat, porumb, alge nori, ceapă verde, usturoi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 48,
+              "spicy": false,
+              "image_url": "images/products/karaage-ramen/karaage-ramen-26ab07f1.jpeg",
+              "picture_name": "karaage-ramen-26ab07f1.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "Noodles",
+          "image_url": "images/subcategories/noodles-271843c1.jpeg",
+          "products": [
+            {
+              "name": "Spicy Noodles",
+              "description": "Ingrediente : noodles de orez, ou, varză, lapte de cocos, red curry, ulei, ceapă verde, alune, sare, piper,usturoi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 32,
+              "spicy": true,
+              "image_url": "images/products/spicy-noodles/spicy-noodles-c3c9276c.jpeg",
+              "picture_name": "spicy-noodles-c3c9276c.jpeg"
+            },
+            {
+              "name": "Pad Thai",
+              "description": "Ingrediente : noodles de orez, ou, varză, zahăr, sos tamardin, sos de pește, germeni de soia, alune, usturoi",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": "images/products/pad-thai/pad-thai-f9f21154.jpeg",
+              "picture_name": "pad-thai-f9f21154.jpeg"
+            },
+            {
+              "name": "Sweet sour",
+              "description": "Ingrediente : noodles de orez, ou, varză, sos teriyaki, lime, susan, usturoi- 370 g",
+              "weight": {
+                "value": 100,
+                "unit": "g"
+              },
+              "price_ron": 32,
+              "spicy": false,
+              "image_url": "images/products/sweet-sour/sweet-sour-b30bd5ca.jpeg",
+              "picture_name": "sweet-sour-b30bd5ca.jpeg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wine",
+      "subcategories": [
+        {
+          "name": "Vin la pahar",
+          "image_url": "images/subcategories/vin-la-pahar-e64718b3.jpeg",
+          "products": [
+            {
+              "name": "Murfatlar Arezan Alb",
+              "description": "Romania - Dobrogea - Chardonnay  Sec",
+              "weight": null,
+              "price_ron": 26,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Murfatlar Arezan Rose",
+              "description": "Romania - Dobrogea - Cabarnet Sauvignon Sec",
+              "weight": null,
+              "price_ron": 26,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Murfatlar Arezan Rosu",
+              "description": "Romania - Dobrogea - Merlot Sec",
+              "weight": null,
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Famiglia Angelillo",
+              "description": "Italia - Pinot Grigio Sec",
+              "weight": {
+                "value": 150,
+                "unit": "ml"
+              },
+              "price_ron": 28,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Vin alb",
+          "image_url": "images/subcategories/vin-alb-6a0252d0.jpeg",
+          "products": [
+            {
+              "name": "Villa Prandone",
+              "description": "Italia - Pecorino D.O.C. Sec",
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Santa Sofia",
+              "description": "Italia - Pinot Grigio Garda D.O.C.",
+              "weight": null,
+              "price_ron": 125,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "1000 Chipuri Iordache",
+              "description": "Romania - Dealul Mare - Feteasca Alba Sec",
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Rasova Sur Mer Alb",
+              "description": "Romania - Dobrogea - Chardonnay , Sauvignon Blanc, Feteasca Alba Sec",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Davino Iacob Alb",
+              "description": "Romania - Dealul Mare - Sauvignon Blanc, Feteasca Alba Sec",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Davino Domaine Ceptura Blanc",
+              "description": "Romania - Dealul Mare - Feteasca Alba, Riesling Italian, Sauvignon Blanc Sec",
+              "weight": null,
+              "price_ron": 220,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Murfatlar Arezan Alb",
+              "description": "Romania - Dobrogea - Chardonnay",
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Domaine Fevre Chablis",
+              "description": "Franta - Chardonnay Sec",
+              "weight": null,
+              "price_ron": 240,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Domaine De La Garena Sancere",
+              "description": "Franta - Sauvignon Blanc Sec",
+              "weight": null,
+              "price_ron": 310,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Famiglia Angelillo",
+              "description": "Italia - Pinot Grigio Sec",
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Viberti Filebasse",
+              "description": "Italia - Chardonnay Sec",
+              "weight": null,
+              "price_ron": 220,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Vin rose",
+          "image_url": "images/subcategories/vin-rose-0827cac2.jpeg",
+          "products": [
+            {
+              "name": "Murfatlar Arezan",
+              "description": "Romania - Dobrogea - Cabernet Sauvignon Sec",
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Davino Iacob",
+              "description": "Romania - Dealul Mare - Cabernet Sauvignon, Merlot Sec",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "SERVE - CUVEE SISSI",
+              "description": "Romania - Dealul Mare - Pinot Noir Sec",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Famiglia Angelillo",
+              "description": "Italia - Primitivo Rosato Sec",
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Vin Rosu",
+          "image_url": "images/subcategories/vin-rosu-1921214c.jpeg",
+          "products": [
+            {
+              "name": "Murfatlar Arezan",
+              "description": "Romania - Dogrogea - Merlot Sec",
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "DAVINO - IACOB",
+              "description": "Romania - Dealul Mare - Carbernet Sauvignon, Feteasca Neagra Sec",
+              "weight": null,
+              "price_ron": 150,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Davidescu Select",
+              "description": "Republica Moldova - Feteasca Neagra, Saperavi Sec",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Famiglia Angelillo",
+              "description": "Italia - Primitivo Puglia Sec",
+              "weight": null,
+              "price_ron": 130,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Motemajor Quattronotti NegroAmaro",
+              "description": "Italia - NegroAmaro Sec",
+              "weight": null,
+              "price_ron": 150,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Viberti Pubblicano Dolcetto",
+              "description": "Italia - Dolcetto Sec",
+              "weight": null,
+              "price_ron": 190,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Torbreck Shiraz",
+              "description": "Australia - Shiraz Sec",
+              "weight": null,
+              "price_ron": 310,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Chateu Saint Cosme Chateuneuf-Du-Pape",
+              "description": "Franta - Grenache, Syrah, Mourvedre, Cinsault Sec",
+              "weight": null,
+              "price_ron": 420,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Chateu Saint Cosme Cotes-Du-Rhone",
+              "description": "Franta - Syrah Sec",
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        },
+        {
+          "name": "Spumante",
+          "image_url": "images/subcategories/spumante-850a1723.jpeg",
+          "products": [
+            {
+              "name": "Zardetto Prosecco Brut",
+              "description": "Italia - Chardonnay, Glera, Pinot Blanc Brut",
+              "weight": null,
+              "price_ron": 24,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Centinari Franciacorta",
+              "description": "Italia - Franciacorta - Chardonnay Brut",
+              "weight": null,
+              "price_ron": 320,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Grimau Cava Brut",
+              "description": "Spania - Brut",
+              "weight": null,
+              "price_ron": 120,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Zardetto Rose Millesimato",
+              "description": "Lombardia , Italy",
+              "weight": null,
+              "price_ron": 140,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Collalto Gaio Prosecco",
+              "description": "Italia - Glera Extra Dry",
+              "weight": null,
+              "price_ron": 210,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Champagne Veuve Clicquot",
+              "description": "Franta - Pinot Meunier, Chardonnay Brut",
+              "weight": null,
+              "price_ron": 560,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            },
+            {
+              "name": "Champagne Laurent Perier",
+              "description": "Franta - Chardonnay, Pinot Noir, Pinot Meunier Brut",
+              "weight": null,
+              "price_ron": 580,
+              "spicy": false,
+              "image_url": null,
+              "picture_name": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

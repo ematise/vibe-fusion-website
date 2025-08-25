@@ -12,15 +12,15 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 brightness-50">
         <Image
           src="/restaurant/vibe-restaurant-terrace.jpg"
           alt="Vibe restaurant terrace and interior"
           fill
-          className="object-cover"
+          className="object-cover brightness-40"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/70 to-transparent" />
       </div>
 
       {/* Content */}
@@ -42,10 +42,10 @@ export function Hero() {
               />
             </div>
           </div>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            {t("hero.subtitle")}
-          </p>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          {/*<p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">*/}
+          {/*  {t("hero.subtitle")}*/}
+          {/*</p>*/}
+          <p className="text-xl text-gray-100 max-w-2xl font-light shadow-md mx-auto">
             {t("hero.description")}
           </p>
         </motion.div>
@@ -54,12 +54,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
+          className="gap-4 px-12"
         >
-          <Button asChild size="lg" className="text-lg px-8 py-4">
+          <Button asChild size="lg" className="text-lg px-8 py-4 mb-4 mt-6 mr-0 md:mr-4">
             <Link href="/menu">{t("hero.exploreMenu")}</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
+          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 mb-4 mt-2">
             <Link href="/reservations">{t("hero.bookTable")}</Link>
           </Button>
         </motion.div>

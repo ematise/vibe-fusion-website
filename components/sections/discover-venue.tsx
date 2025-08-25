@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
+import { H2 } from "@/components/ui/headings"
 
 export function DiscoverVenue() {
   const { t } = useTranslation()
@@ -11,9 +12,9 @@ export function DiscoverVenue() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif mb-8" style={{ color: '#8B6914' }}>
+          <H2 size="lg" className="mb-8" style={{ color: '#8B6914' }}>
             {t("discoverVenue.title")}
-          </h2>
+          </H2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

@@ -9,31 +9,31 @@
   },
   "hero": {
     "subtitle": "Delicious food with vibes",
-    "description": "Intră într-o experiență unde fiecare oră are propria aromă. Vino pentru cafea de specialitate și rămâi pentru sushi; experimentează energia brunch-ului de zi și magia gustărilor de noapte. Totul e despre vibe!",
+    "description": "Intră într-o experiență unde fiecare oră are propria aromă. Vino pentru cafea de specialitate și rămâi pentru sushi; Totul e despre vibe!",
     "exploreMenu": "Explorează Meniul",
     "bookTable": "Rezervă o Masă"
   },
   "welcome": {
     "title": "Bun venit la Vibe!",
-    "intro": "Dimineața, lumina soarelui se revarsă în timp ce savurezi cafele boutique și clasicuri de brunch cu un twist. Seara, neonul Vibe strălucește și spațiul prinde viață cu rulouri de sushi colorate și cocktailuri create cu măiestrie.",
-    "description": "Atmosfera este optimistă și tinerească, dar relaxată. Verdeața luxuriantă și accentele tropicale oferă senzația unei oaze urbane. E genul de loc unde studenții, profesioniștii și călătorii se adună cu prietenii pentru a se bucura de cafea bună, mâncare bună și good vibes."
+    "intro": "Vino să savurezi cafele boutique și clasicuri de brunch cu un twist. Seara, spațiul la Vibe prinde viață cu rulouri de sushi colorate și cocktailuri create de pasionați.",
+    "description": "Atmosfera este optimistă dar relaxată. Verdeața luxuriantă și accentele tropicale oferă senzația unei oaze urbane. E genul de loc unde  profesioniștii și călătorii se adună cu prietenii pentru a se bucura de cafea bună, mâncare bună și good vibes."
   },
   "tryMenu": {
     "title": "Experiența Bucătăriei Fusion",
     "intro": "Meniul este la fel de eclectic ca și mulțimea, având de toate, de la Eggs Benedict pufoși la nigiri elegant. Fiecare preparat și băutură este o aventură în fusion: Estul întâlnește Vestul, clasicul întâlnește modernul.",
-    "description": "De la cafea de specialitate third-wave și croissante făcute în casă la ramen de prânz și poke bowls, terminând cu rulouri de sushi și cocktailuri - toate în același local. Această creativitate jucăușă străbate întregul nostru meniu.",
-    "viewMenu": "VEZI MENIUL"
+    "description": "De la cafea de specialitate third-wave și croissante făcute în casă la ramen de prânz și poke bowls, terminând cu rulouri de sushi și cocktailuri - toate în același local.",
+    "viewMenu": "Vezi Meniul"
   },
   "discoverVenue": {
     "title": "Un Colț Tropical în Cluj",
     "intro": "Vibe Fusion este adesea descris ca 'un colț tropical în Cluj' - datorită atmosferei sale luxuriante, vibrante și decorului cald.",
-    "description1": "Recent ne-am extins cu o terasă însorită nouă pentru a crea mai mult spațiu pentru vibe-ul tău preferat. Vino pentru relaxare, mâncare bună și băuturi fresh!",
+    "description1": "Recent ne-am extins cu o terasă pentru a crea mai mult spațiu pentru vibe-ul tău preferat. Vino pentru relaxare, mâncare bună și băuturi fresh!",
     "description2": "Fie că ești un aficionat al cafelei, un entuziast al sushi-ului sau doar cauți un loc prietenos să te relaxezi, Vibe Fusion vrea să te simți ca parte din familie."
   },
   "about": {
     "title": "Povestea Brandului Nostru",
-    "description1": "Vibe Fusion a început cu o idee îndrăzneață: să combine trei elemente esențiale ale unei experiențe culinare de neuitat într-un singur loc. Sushi de înaltă calitate, băuturi uimitoare și bucătărie fusion creativă coexistă unde tradiția întâlnește inovația.",
-    "description2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - este un hub de lifestyle pentru tinerii și tinerii la suflet din Cluj. Bucătarii noștri tratează meseria lor ca artă, cu dedicația pentru calitate vizibilă în fiecare preparat.",
+    "description1": "Vibe Fusion a început cu o idee îndrăzneață: să combine trei elemente esențiale ale unei experiențe culinare de neuitat într-un singur loc. Sushi de înaltă calitate, băuturi uimitoare și bucătărie fusion creativă.",
+    "description2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - este un hub de lifestyle pentru tinerii și tinerii la suflet din Cluj. Bucătarii noștri tratează meseria lor ca artă.",
     "description3": "Ceea ce ne deosebește este această fuziune de mâncare, atmosferă și comunitate. Reîmprospătăm constant meniul cu ingrediente sezoniere și inspirații multiculturale, asigurându-ne că există întotdeauna ceva nou de descoperit.",
     "openedIn": "2024",
     "fusionDishes": "100+",
@@ -60,10 +60,11 @@
   "menu": {
     "title": "Meniul Nostru",
     "description": "Descoperă preparatele și băuturile noastre atent create",
-    "hero": "Delicious food with vibes"
+    "hero": "Delicious food with vibes",
+    "items": "produse"
   },
   "footer": {
-    "description": "Experimentează o cină excepțională în inima Cluj-Napoca, unde măiestria culinară întâlnește ospitalitatea caldă.",
+    "description": "Food with vibes",
     "contact": "Contact",
     "location": "Cluj-Napoca, România",
     "openingHours": "Program",

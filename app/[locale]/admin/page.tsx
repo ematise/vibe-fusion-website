@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Menu, Users, MessageSquare, Settings } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
+import { H1 } from "@/components/ui/headings"
 
 export default function AdminDashboard() {
   const { data: session, status } = useSession()
@@ -46,7 +47,7 @@ export default function AdminDashboard() {
                 />
                 <div className="text-white text-xs tracking-widest uppercase">admin</div>
               </div>
-              <h1 className="text-2xl font-bold text-brand-dark">{t("admin.dashboard")}</h1>
+              <H1 size="md" weight="bold">{t("admin.dashboard")}</H1>
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-gray-600">{t("admin.welcome")}, {session.user.name}</span>

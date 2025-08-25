@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
+import { H2 } from "@/components/ui/headings"
 
 export function Welcome() {
   const { t } = useTranslation()
@@ -12,9 +13,9 @@ export function Welcome() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-serif text-brand-dark mb-6" style={{ color: '#8B6914' }}>
+            <H2 size="lg" className="mb-6" style={{ color: '#8B6914' }}>
               {t("welcome.title")}
-            </h2>
+            </H2>
             <p className="text-lg text-gray-700 leading-relaxed">
               {t("welcome.intro")}
             </p>
