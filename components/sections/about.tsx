@@ -92,7 +92,7 @@ export function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <PageHeading level="h2" className="mb-4">
+            <PageHeading level="h2" className="mb-4 text-center">
               {t("aboutPage.productsTitle")}
             </PageHeading>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
