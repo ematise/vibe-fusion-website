@@ -109,13 +109,13 @@ export function About() {
             >
               <div className="relative h-48 rounded-2xl overflow-hidden mb-4">
                 <Image
-                  src="/images/subcategories/coffee-751e43b8.jpeg"
+                  src="/images/cluj/subcategories/coffee-751e43b8.jpeg"
                   alt="Specialty Coffee"
                   fill
                   className="object-cover"
                 />
               </div>
-              <H3 size="sm" className="mb-2">
+              <H3 size="sm" className="mb-2 text-center">
                 {t("aboutPage.coffeeTitle")}
               </H3>
               <p className="text-gray-600 text-sm">
@@ -131,13 +131,13 @@ export function About() {
             >
               <div className="relative h-48 rounded-2xl overflow-hidden mb-4">
                 <Image
-                  src="/images/subcategories/savory-5694b537.jpeg"
+                  src="/images/cluj/subcategories/savory-5694b537.jpeg"
                   alt="Brunch Classics"
                   fill
                   className="object-cover"
                 />
               </div>
-              <H3 size="sm" className="mb-2">
+              <H3 size="sm" className="mb-2 text-center">
                 {t("aboutPage.brunchTitle")}
               </H3>
               <p className="text-gray-600 text-sm">
@@ -153,13 +153,13 @@ export function About() {
             >
               <div className="relative h-48 rounded-2xl overflow-hidden mb-4">
                 <Image
-                  src="/images/subcategories/sashimi-102708af.jpeg"
+                  src="/images/cluj/subcategories/sashimi-102708af.jpeg"
                   alt="Sushi & Asian Fusion"
                   fill
                   className="object-cover"
                 />
               </div>
-              <H3 size="sm" className="mb-2">
+              <H3 size="sm" className="mb-2 text-center">
                 {t("aboutPage.sushiTitle")}
               </H3>
               <p className="text-gray-600 text-sm">
@@ -175,13 +175,13 @@ export function About() {
             >
               <div className="relative h-48 rounded-2xl overflow-hidden mb-4">
                 <Image
-                  src="/images/subcategories/cocktails-40d93add.jpeg"
+                  src="/images/cluj/subcategories/cocktails-40d93add.jpeg"
                   alt="Cocktails & Drinks"
                   fill
                   className="object-cover"
                 />
               </div>
-              <H3 size="sm" className="mb-2">
+              <H3 size="sm" className="mb-2 text-center">
                 {t("aboutPage.cocktailsTitle")}
               </H3>
               <p className="text-gray-600 text-sm">
