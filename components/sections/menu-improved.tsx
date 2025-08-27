@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { useTranslation } from "@/lib/i18n"
 import { H1, H2, H3 } from "@/components/ui/headings"
 import { Flame, Clock, Weight, ArrowLeft, MapPin } from "lucide-react"
+import { PageHero } from "./page-hero"
 
 interface Product {
   name: string
@@ -153,21 +154,6 @@ export function MenuImproved() {
 
   return (
       <div>
-        {/* Hero Section */}
-        <div className="relative w-full h-[200px]">
-          <Image
-              src="/menu-hero.jpeg"
-              alt="Menu Hero"
-              fill
-              className="object-cover"
-              priority
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <H1 size="lg" weight="semibold" align="center" className="text-white drop-shadow-lg">
-              {t("menu.hero")}
-            </H1>
-          </div>
-        </div>
 
         {/* Location Selection */}
         {viewState === 'location' && (

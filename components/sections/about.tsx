@@ -8,6 +8,8 @@ import { PageHeading } from "@/components/ui/page-heading"
 import { H3 } from "@/components/ui/headings"
 import { useTranslation } from "@/lib/i18n"
 import { Coffee, Utensils, Users, Heart, Star, Award } from "lucide-react"
+import { InstagramGallery } from "./instagram-gallery"
+import { PageHero } from "./page-hero"
 
 export function About() {
   const { t } = useTranslation()
@@ -15,28 +17,10 @@ export function About() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <motion.h1 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl font-bold font-serif text-brand-dark mb-6"
-            >
-              {t("aboutPage.title")}
-            </motion.h1>
-            <motion.p 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-gray-600 leading-relaxed"
-            >
-              {t("aboutPage.subtitle")}
-            </motion.p>
-          </div>
-        </div>
-      </section>
+      <PageHero 
+        title={t("aboutPage.title")}
+        subtitle={t("aboutPage.subtitle")}
+      />
 
       {/* Brand Story Section */}
       <section className="py-20">
@@ -70,8 +54,8 @@ export function About() {
             >
               <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/restaurant/vibe-restaurant-terrace.jpg"
-                  alt="Vibe Fusion restaurant terrace and atmosphere"
+                  src="/about-us.jpg"
+                  alt="Vibe Fusion restaurant about us"
                   fill
                   className="object-cover"
                 />
@@ -82,6 +66,10 @@ export function About() {
           </div>
         </div>
       </section>
+
+      {/* Instagram Gallery Section */}
+      <InstagramGallery />
+
 
       {/* Products Section */}
       <section className="py-20">
@@ -191,6 +179,7 @@ export function About() {
           </div>
         </div>
       </section>
+
 
     </div>
   )

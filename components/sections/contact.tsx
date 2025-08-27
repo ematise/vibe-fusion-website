@@ -8,6 +8,7 @@ import Image from "next/image"
 import { PageHeading } from "@/components/ui/page-heading"
 import { useTranslation } from "@/lib/i18n"
 import { H1, H2, H3 } from "@/components/ui/headings"
+import { PageHero } from "./page-hero"
 
 export function Contact() {
   const { t } = useTranslation()
@@ -43,20 +44,10 @@ export function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative w-full h-[200px] mb-6">
-        <Image
-          src="/restaurant/vibe-restaurant-table.jpg"
-          alt="Contact Hero"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <H1 size="lg" weight="semibold" align="center" className="text-white drop-shadow-lg">
-            {t("contactPage.heroTitle")}
-          </H1>
-        </div>
-      </div>
+      <PageHero 
+        title={t("contactPage.heroTitle")}
+        subtitle={t("contactPage.heroSubtitle") || ""}
+      />
 
       <div className="container mx-auto px-4 py-8 pt-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -78,7 +69,7 @@ export function Contact() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-gray-50 rounded-2xl p-6 space-y-4"
+                className="border border-brand-primary rounded-2xl p-6 space-y-4"
               >
                 <H3 size="md" weight="semibold" variant="primary">Cluj-Napoca</H3>
                 
@@ -135,7 +126,7 @@ export function Contact() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-gray-50 rounded-2xl p-6 space-y-4"
+                className="border border-brand-primary rounded-2xl p-6 space-y-4"
               >
                 <H3 size="md" weight="semibold" variant="primary">Brașov</H3>
                 
@@ -210,7 +201,7 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 onSubmit={handleSubmit}
-                className="bg-gray-50 rounded-2xl p-6 space-y-6"
+                className="border border-brand-primary rounded-2xl p-6 space-y-6"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>

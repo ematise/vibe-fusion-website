@@ -102,7 +102,7 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`transition-colors px-2 font-extralight ${
+                    className={`transition-colors px-2 font-normal ${
                       isActive 
                         ? 'text-brand-accent border-l-2 border-brand-accent pl-3' 
                         : 'text-white hover:text-brand-accent'
