@@ -33,6 +33,26 @@ export function Hero() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
+  // Intersection observer for mobile autoplay
+  useEffect(() => {
+    if (isMobile && videoRef.current) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && videoRef.current) {
+              videoRef.current.play().catch(console.error)
+            }
+          })
+        },
+        { threshold: 0.5 }
+      )
+      
+      observer.observe(videoRef.current)
+      
+      return () => observer.disconnect()
+    }
+  }, [isMobile])
+
   useEffect(() => {
     const videoSrc = isMobile ? "/images/cluj/video/mobile_video.mp4" : "/images/cluj/video/desktop_video_nigiri.mp4"
     setDebugInfo(`Loading video: ${videoSrc} | Mobile: ${isMobile}`)
@@ -55,12 +75,35 @@ export function Hero() {
     console.log('Video can start playing')
     setDebugInfo(prev => prev + ' | Can Play ✓')
     
-    // Try to manually play the video if autoplay failed
+    // Force play for mobile devices
     if (videoRef.current) {
-      videoRef.current.play().catch(error => {
-        console.error('Manual play failed:', error)
-        setDebugInfo(prev => prev + ' | Manual Play Failed ✗')
-      })
+      const playPromise = videoRef.current.play()
+      
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            console.log('Autoplay started successfully')
+            setDebugInfo(prev => prev + ' | Autoplay Success ✓')
+          })
+          .catch(error => {
+            console.error('Autoplay failed:', error)
+            setDebugInfo(prev => prev + ' | Autoplay Failed ✗')
+            
+            // For mobile, try to play on first user interaction
+            if (isMobile) {
+              const playOnTouch = () => {
+                if (videoRef.current) {
+                  videoRef.current.play().catch(console.error)
+                }
+                document.removeEventListener('touchstart', playOnTouch)
+                document.removeEventListener('click', playOnTouch)
+              }
+              
+              document.addEventListener('touchstart', playOnTouch, { once: true })
+              document.addEventListener('click', playOnTouch, { once: true })
+            }
+          })
+      }
     }
   }
 
@@ -147,7 +190,16 @@ export function Hero() {
               loop
               playsInline
               controls={false}
+              disablePictureInPicture
+              disableRemotePlayback
+              webkit-playsinline="true"
+              x5-playsinline="true"
+              x5-video-player-type="h5"
               className="w-full h-full object-cover brightness-40"
+              style={{ 
+                pointerEvents: 'none',
+                objectFit: 'cover'
+              }}
               onLoadedData={handleVideoLoad}
               onLoadedMetadata={handleVideoLoadedMetadata}
               onCanPlay={handleVideoCanPlay}
@@ -156,7 +208,7 @@ export function Hero() {
               onStalled={handleVideoStalled}
               onLoadStart={handleVideoLoadStart}
               onError={handleVideoError}
-              preload="auto"
+              preload="metadata"
             >
               <source 
                 src={isMobile ? "/images/cluj/video/mobile_video.mp4" : "/images/cluj/video/desktop_video_nigiri.mp4"} 
