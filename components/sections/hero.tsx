@@ -199,10 +199,10 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="gap-4 px-12 mt-4"
         >
-          <Button asChild size="lg" className="text-lg px-8 py-4 mb-4 mt-8 mr-0 md:mr-4 drop-shadow-lg">
+          <Button asChild size="lg" className="text-lg px-8 py-4 mb-4 mt-8 mr-0 md:mr-4">
             <Link href="/menu">{t("hero.exploreMenu")}</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 mb-4 mt-2 drop-shadow-lg backdrop-blur-sm">
+          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 mb-4 mt-2 backdrop-blur-sm">
             <Link href="/reservations">{t("hero.bookTable")}</Link>
           </Button>
         </motion.div>
