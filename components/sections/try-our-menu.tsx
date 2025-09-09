@@ -10,11 +10,11 @@ export function TryOurMenu() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-brand-accent/20">
+    <section className="py-14 bg-brand-accent/20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative">
+          <div className="relative hidden md:block">
             <div className="relative h-96 lg:h-[400px] rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/restaurant/vibe-restaurant-food.jpeg"
@@ -36,7 +36,7 @@ export function TryOurMenu() {
             <p className="text-gray-600 leading-relaxed">
               {t("tryMenu.description")}
             </p>
-            <div className="pt-4">
+            <div className="pt-4 text-center md:text-left">
               <Button asChild size="lg" className="text-lg px-8 py-4">
                 <Link href="/menu">{t("tryMenu.viewMenu")}</Link>
               </Button>

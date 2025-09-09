@@ -3,6 +3,10 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import '../globals.css'
 import { LanguageProvider } from '@/lib/i18n'
 
+// Import locale files
+import roLocale from '@/locales/ro.json'
+import enLocale from '@/locales/en.json'
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -16,10 +20,14 @@ const playfair = Playfair_Display({
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   const locale = params.locale
   
+  // Get translations based on locale
+  const translations = locale === 'ro' ? roLocale : enLocale
+  const metadata = translations.metadata
+  
   return {
-    title: 'Vibe Restaurant | Bar - Cluj-Napoca',
-    description: 'Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca. Discover our carefully crafted menu, premium beverages, and vibrant atmosphere.',
-    keywords: 'restaurant, bar, Cluj, fine dining, cuisine, cocktails, Vibe',
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
     authors: [{ name: 'Vibe Restaurant | Bar' }],
     creator: 'Vibe',
     publisher: 'Vibe',
@@ -32,8 +40,8 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
       apple: '/favicon-192x192.png',
     },
     openGraph: {
-      title: 'Vibe Restaurant | Bar - Cluj-Napoca',
-      description: 'Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca.',
+      title: metadata.ogTitle,
+      description: metadata.ogDescription,
       url: 'https://vibe.com',
       siteName: 'Vibe Restaurant | Bar',
       images: [
@@ -49,8 +57,8 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Vibe Restaurant | Bar - Cluj-Napoca',
-      description: 'Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca.',
+      title: metadata.ogTitle,
+      description: metadata.twitterDescription,
       images: ['/vibe-logo-white-transparent-bg.png'],
     },
     robots: {

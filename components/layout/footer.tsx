@@ -36,7 +36,7 @@ export function Footer() {
                 <Link 
                   href="https://maps.google.com/maps?q=Vibe+Fusion+%26+Restaurant+Sushi+Cluj"
                   target="_blank"
-                  className="text-gray-50 hover:text-brand-secondary transition-colors"
+                  className="text-gray-50 hover:text-brand-secondary transition-colors underline"
                 >
                   <p className="text-sm">Strada Zorilor 25</p>
                   <p className="text-sm">Cluj-Napoca 400535, România</p>
@@ -90,7 +90,7 @@ export function Footer() {
                 <Link 
                   href="https://maps.google.com/maps?q=Vibe+Restaurant+Sushi+Brasov+%26+Cocktail+Bar"
                   target="_blank"
-                  className="text-gray-50 hover:text-brand-secondary transition-colors"
+                  className="text-gray-50 hover:text-brand-secondary transition-colors underline"
                 >
                   <p className="text-sm">Strada Valentin Wagner 4</p>
                   <p className="text-sm">Brașov 500031, România</p>

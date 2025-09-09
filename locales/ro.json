@@ -1,4 +1,46 @@
 {
+  "metadata": {
+    "title": "Vibe | Sushi & Cocktail Bar - Cluj-Napoca",
+    "description": "Probabil, cele mai delicioase seturi de sushi din Cluj! Vibe Restaurant îți oferă preparate autentice, ingrediente premium și livrare rapidă.",
+    "keywords": "restaurant, bar, Cluj, sushi, cocktail, cafea, fusion, Vibe, mâncare japoneză",
+    "ogTitle": "Vibe Restaurant | Bar - Cluj-Napoca",
+    "ogDescription": "Probabil, cele mai delicioase seturi de sushi din Cluj! Experiență culinară unică cu preparate autentice și atmosferă vibrantă.",
+    "twitterDescription": "Probabil, cele mai delicioase seturi de sushi din Cluj! Vibe Restaurant îți oferă preparate autentice și atmosferă vibrantă.",
+    "pages": {
+      "menu": {
+        "title": "Meniu - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Descoperă meniul nostru complet cu sushi proaspăt, cocktailuri signature, cafea specialty și preparate fusion. Ingrediente premium și aromele autentice te așteaptă la Vibe.",
+        "keywords": "meniu sushi Cluj, cocktailuri, cafea specialty, preparate fusion, maki, nigiri, sashimi, ramen, poke bowl",
+        "ogTitle": "Meniul Vibe - Sushi, Cocktailuri & Fusion Cuisine",
+        "ogDescription": "Explorează meniul nostru cu sushi proaspăt, cocktailuri creative și preparate fusion. Ingrediente premium și aromele autentice la Vibe Cluj.",
+        "twitterDescription": "Descoperă meniul complet Vibe - sushi proaspăt, cocktailuri signature și preparate fusion cu ingrediente premium."
+      },
+      "about": {
+        "title": "Despre Noi - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Află povestea Vibe Fusion Cluj - restaurantul care îmbină tradiția japoneză cu inovația modernă. Experiență culinară unică în inima Clujului din 2024.",
+        "keywords": "despre Vibe Cluj, restaurant sushi, povestea brandului, bucătărie fusion, chef japonez, experiență culinară",
+        "ogTitle": "Povestea Vibe - Fusion Japonez în Cluj",
+        "ogDescription": "Descoperă povestea Vibe Fusion, restaurantul care aduce tradiția japoneză și inovația modernă în inima Clujului.",
+        "twitterDescription": "Află povestea Vibe Fusion Cluj - unde tradiția japoneză întâlnește inovația modernă într-o experiență culinară unică."
+      },
+      "contact": {
+        "title": "Contact - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Contactează-ne pentru rezervări sau informații. Vibe Cluj - Str. Exemplu 123, program Luni-Duminică 10:00-24:00. Telefon, email și social media.",
+        "keywords": "contact Vibe Cluj, rezervări restaurant, adresă Vibe, program restaurant, telefon rezervări",
+        "ogTitle": "Contact Vibe Cluj - Rezervări & Informații",
+        "ogDescription": "Contactează Vibe pentru rezervări și informații. Locație centrală în Cluj, program zilnic 10:00-24:00.",
+        "twitterDescription": "Contactează Vibe Cluj pentru rezervări și informații. Program zilnic 10:00-24:00 în centrul Clujului."
+      },
+      "reservations": {
+        "title": "Rezervări - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Rezervă-ți masa la Vibe Cluj și garantează-ți experiența culinară perfectă. Rezervări online simple și rapide pentru sushi și cocktailuri premium.",
+        "keywords": "rezervări Vibe Cluj, rezervare masă online, booking restaurant, rezervare sushi, masă cocktailuri",
+        "ogTitle": "Rezervări Vibe Cluj - Booking Online",
+        "ogDescription": "Rezervă-ți masa la Vibe și bucură-te de sushi proaspăt și cocktailuri premium. Rezervare online simplă și rapidă.",
+        "twitterDescription": "Rezervă-ți masa la Vibe Cluj online. Sushi proaspăt, cocktailuri premium și atmosferă vibrantă te așteaptă."
+      }
+    }
+  },
   "nav": {
     "home": "Acasă",
     "menu": "Meniu",
@@ -25,15 +67,15 @@
     "viewMenu": "Vezi Meniul"
   },
   "discoverVenue": {
-    "title": "Un Colț Tropical în Cluj",
-    "intro": "Vibe Fusion este adesea descris ca 'un colț tropical în Cluj' - datorită atmosferei sale luxuriante, vibrante și decorului cald.",
-    "description1": "Recent ne-am extins cu o terasă pentru a crea mai mult spațiu pentru vibe-ul tău preferat. Vino pentru relaxare, mâncare bună și băuturi fresh!",
+    "title": "Un Colț Tropical",
+    "intro": "Vibe Fusion este adesea descris ca 'un colț tropical' - datorită atmosferei sale luxuriante, vibrante și decorului cald.",
+    "description1": "Terasele noastre oferă refugiul perfect de la agitația orașului, unde natura tropicală întâlnește design-ul modern. Savurează momentele speciale în atmosfera noastră relaxantă, cu mâncare delicioasă și băuturi răcoritoare.",
     "description2": "Fie că ești un aficionat al cafelei, un entuziast al sushi-ului sau doar cauți un loc prietenos să te relaxezi, Vibe Fusion vrea să te simți ca parte din familie."
   },
   "about": {
     "title": "Povestea Brandului Nostru",
     "description1": "Vibe Fusion a început cu o idee îndrăzneață: să combine trei elemente esențiale ale unei experiențe culinare de neuitat într-un singur loc. Sushi de înaltă calitate, băuturi uimitoare și bucătărie fusion creativă.",
-    "description2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - este un hub de lifestyle pentru tinerii și tinerii la suflet din Cluj. Bucătarii noștri tratează meseria lor ca artă.",
+    "description2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - este un hub de lifestyle pentru tinerii și tinerii la suflet. Bucătarii noștri tratează meseria lor ca artă.",
     "description3": "Ceea ce ne deosebește este această fuziune de mâncare, atmosferă și comunitate. Reîmprospătăm constant meniul cu ingrediente sezoniere și inspirații multiculturale, asigurându-ne că există întotdeauna ceva nou de descoperit.",
     "openedIn": "2024",
     "fusionDishes": "100+",
@@ -92,7 +134,7 @@
     "subtitle": "Un concept de restaurant unic care îmbină ziua cu noaptea, cafeaua cu cocktailurile, Estul cu Vestul – totul sub același acoperiș.",
     "storyTitle": "Povestea Noastră",
     "storyDescription1": "Vibe Fusion a început cu o idee îndrăzneață: să combinăm trei elemente esențiale ale unei experiențe culinare de neuitat într-un singur loc. Sushi de înaltă calitate, băuturi uimitoare și bucătărie fusion creativă coexistă acolo unde tradiția întâlnește inovația.",
-    "storyDescription2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - suntem un hub de lifestyle pentru tinerii și tinerii la suflet din Cluj. Bucătarii noștri își tratează meseria ca pe o artă, cu dedicația pentru calitate vizibilă în fiecare fel de mâncare.",
+    "storyDescription2": "Din ziua deschiderii în mai 2024, ne-am poziționat ca mai mult decât un restaurant - suntem un hub de lifestyle pentru tinerii și tinerii la suflet. Bucătarii noștri își tratează meseria ca pe o artă, cu dedicația pentru calitate vizibilă în fiecare fel de mâncare.",
     "storyDescription3": "Ceea ce ne diferențiază este această fuziune de mâncare, atmosferă și comunitate. Reîmprospătăm constant meniul cu ingrediente de sezon și inspirații multiculturale, asigurându-ne că există întotdeauna ceva nou de descoperit.",
     "valuesTitle": "Valorile Noastre Fundamentale",
     "valuesSubtitle": "Principiile care ghidează tot ceea ce facem la Vibe Fusion Cluj.",

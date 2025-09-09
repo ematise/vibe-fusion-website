@@ -240,7 +240,7 @@ export function Hero() {
               />
             </div>
           </div>
-          <h3 className="font-serif text-3xl text-gray-100 max-w-2xl font-light drop-shadow-xl mx-auto leading-[40px]">
+          <h3 className="font-serif text-2xl md:text-3xl text-gray-100 max-w-2xl font-light drop-shadow-xl mx-auto leading-[36px] md:leading-[40px]">
             {t("hero.description")}
           </h3>
         </motion.div>

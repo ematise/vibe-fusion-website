@@ -172,18 +172,17 @@ export function MenuImproved() {
                     className="cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden rounded-2xl"
                     onClick={() => handleLocationSelect('cluj')}
                 >
-                  <div className="relative h-64">
+                  <div className="relative h-64 text-center">
                     <Image
                         src="/restaurant/vibe-cluj.jpg"
                         alt="Vibe Cluj-Napoca"
                         fill
                         className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <div className="flex items-center mb-2">
-                        <MapPin className="h-5 w-5 mr-2" />
-                        <H3 size="lg" weight="bold" className="text-white mb-0">{t("menu.clujLocation")}</H3>
+                    <div className="text-center absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="text-center absolute bottom-3 left-0 right-0 p-6 text-white">
+                      <div className="flex items-center mb-2 justify-center">
+                        <H3 size="lg" weight="bold" className="text-white mb-0 !text-5xl">{t("menu.clujLocation")}</H3>
                       </div>
                       <p className="text-gray-200 text-sm">Strada Zorilor 25</p>
                     </div>
@@ -202,12 +201,11 @@ export function MenuImproved() {
                         className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <div className="flex items-center mb-2">
-                        <MapPin className="h-5 w-5 mr-2" />
-                        <H3 size="lg" weight="bold" className="text-white mb-0">{t("menu.brasovLocation")}</H3>
+                    <div className="absolute bottom-3 left-0 right-0 p-6 text-white">
+                      <div className="flex items-center mb-2 justify-center">
+                        <H3 size="lg" weight="bold" className="text-white mb-0 !text-5xl">{t("menu.brasovLocation")}</H3>
                       </div>
-                      <p className="text-gray-200 text-sm">Strada Valentin Wagner 4</p>
+                      <p className="text-gray-200 text-sm text-center">Strada Valentin Wagner 4</p>
                     </div>
                   </div>
                 </Card>

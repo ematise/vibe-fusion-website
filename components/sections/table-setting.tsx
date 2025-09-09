@@ -53,12 +53,12 @@ export function TableSetting() {
   }, [targetPosition])
 
   return (
-    <section ref={containerRef} className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
+    <section ref={containerRef} className="relative h-32 md:h-80 lg:h-96 overflow-hidden">
       {/* Background image with parallax */}
       <div 
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: 'url(/restaurant/vibe-restaurant-mirror.jpg)',
+          backgroundImage: 'url(/images/hero/2.jpg)',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: `center ${backgroundPosition}%`,

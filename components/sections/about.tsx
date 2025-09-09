@@ -23,7 +23,7 @@ export function About() {
       />
 
       {/* Brand Story Section */}
-      <section className="py-20">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -41,9 +41,10 @@ export function About() {
               <p className="text-gray-600 leading-relaxed">
                 {t("aboutPage.storyDescription2")}
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mt-6 hidden md:block">
                 {t("aboutPage.storyDescription3")}
               </p>
+
             </motion.div>
 
             <motion.div 
@@ -63,6 +64,9 @@ export function About() {
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-primary rounded-lg opacity-20"></div>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-brand-secondary rounded-lg opacity-20"></div>
             </motion.div>
+            <p className="text-gray-600 leading-relaxed mt-6 block md:hidden">
+                {t("aboutPage.storyDescription3")}
+            </p>
           </div>
         </div>
       </section>
@@ -72,7 +76,7 @@ export function About() {
 
 
       {/* Products Section */}
-      <section className="py-20">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}

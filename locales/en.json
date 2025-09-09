@@ -1,4 +1,46 @@
 {
+  "metadata": {
+    "title": "Vibe | Sushi & Cocktail Bar - Cluj-Napoca",
+    "description": "Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca. Discover our carefully crafted sushi, premium ingredients, and vibrant atmosphere.",
+    "keywords": "restaurant, bar, Cluj, sushi, cocktail, coffee, fine dining, fusion, Vibe, Japanese cuisine",
+    "ogTitle": "Vibe Restaurant | Bar - Cluj-Napoca",
+    "ogDescription": "Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca. Premium sushi, fusion cuisine, and vibrant atmosphere.",
+    "twitterDescription": "Experience exceptional dining at Vibe Restaurant | Bar in Cluj-Napoca. Premium sushi, fusion cuisine, and vibrant atmosphere.",
+    "pages": {
+      "menu": {
+        "title": "Menu - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Explore our complete menu featuring fresh sushi, signature cocktails, specialty coffee, and fusion dishes. Premium ingredients and authentic flavors await you at Vibe.",
+        "keywords": "sushi menu Cluj, cocktails, specialty coffee, fusion dishes, maki, nigiri, sashimi, ramen, poke bowl",
+        "ogTitle": "Vibe Menu - Sushi, Cocktails & Fusion Cuisine",
+        "ogDescription": "Discover our menu with fresh sushi, creative cocktails, and fusion dishes. Premium ingredients and authentic flavors at Vibe Cluj.",
+        "twitterDescription": "Explore Vibe's complete menu - fresh sushi, signature cocktails, and fusion dishes made with premium ingredients."
+      },
+      "about": {
+        "title": "About Us - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Learn the story of Vibe Fusion Cluj - the restaurant that blends Japanese tradition with modern innovation. A unique culinary experience in the heart of Cluj since 2024.",
+        "keywords": "about Vibe Cluj, sushi restaurant, brand story, fusion cuisine, Japanese chef, culinary experience",
+        "ogTitle": "The Vibe Story - Japanese Fusion in Cluj",
+        "ogDescription": "Discover the story of Vibe Fusion, the restaurant bringing Japanese tradition and modern innovation to the heart of Cluj.",
+        "twitterDescription": "Learn about Vibe Fusion Cluj - where Japanese tradition meets modern innovation in a unique culinary experience."
+      },
+      "contact": {
+        "title": "Contact - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Contact us for reservations or information. Vibe Cluj - Example St. 123, open Monday-Sunday 10:00-24:00. Phone, email, and social media.",
+        "keywords": "contact Vibe Cluj, restaurant reservations, Vibe address, restaurant hours, reservation phone",
+        "ogTitle": "Contact Vibe Cluj - Reservations & Info",
+        "ogDescription": "Contact Vibe for reservations and information. Central location in Cluj, open daily 10:00-24:00.",
+        "twitterDescription": "Contact Vibe Cluj for reservations and information. Open daily 10:00-24:00 in central Cluj."
+      },
+      "reservations": {
+        "title": "Reservations - Vibe | Sushi & Cocktail Bar Cluj",
+        "description": "Reserve your table at Vibe Cluj and guarantee your perfect culinary experience. Simple and fast online reservations for premium sushi and cocktails.",
+        "keywords": "Vibe Cluj reservations, online table booking, restaurant booking, sushi reservations, cocktail table",
+        "ogTitle": "Vibe Cluj Reservations - Online Booking",
+        "ogDescription": "Reserve your table at Vibe and enjoy fresh sushi and premium cocktails. Simple and fast online booking.",
+        "twitterDescription": "Book your table at Vibe Cluj online. Fresh sushi, premium cocktails, and vibrant atmosphere await you."
+      }
+    }
+  },
   "nav": {
     "home": "Home",
     "menu": "Menu",
@@ -27,7 +69,7 @@
   "discoverVenue": {
     "title": "A Tropical Corner in Cluj",
     "intro": "Vibe Fusion is often described as 'a tropical corner in the city' - thanks to its lush, vibrant atmosphere and warm decor.",
-    "description1": "We recently expanded with a sunny new terrace to create more space for your favorite vibe. Come for relaxation, good food, and fresh drinks!",
+    "description1": "Our terraces offer the perfect escape from city bustle, where tropical nature meets modern design. Savor special moments in our relaxing atmosphere, with delicious food and refreshing drinks.",
     "description2": "Whether you're a coffee aficionado, sushi enthusiast, or just looking for a friendly place to hang out, Vibe Fusion wants you to feel like part of the family."
   },
   "about": {

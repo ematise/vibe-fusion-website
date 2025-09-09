@@ -5,6 +5,7 @@ import { TableSetting } from "@/components/sections/table-setting"
 import { TryOurMenu } from "@/components/sections/try-our-menu"
 import { DiscoverVenue } from "@/components/sections/discover-venue"
 import { Footer } from "@/components/layout/footer"
+import { InstagramGallery } from "@/components/sections/instagram-gallery"
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       <main className="min-h-screen">
         <Hero />
         <Welcome />
-        <TableSetting />
         <TryOurMenu />
+        <TableSetting />
         <DiscoverVenue />
+        <InstagramGallery />
       </main>
       <Footer />
     </>

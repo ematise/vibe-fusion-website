@@ -79,13 +79,13 @@ export function InstagramGallery() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
 
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           {instagramImages.map((image, index) => (
             <ImageItem key={image.id} image={image} index={index} />
           ))}
