@@ -170,7 +170,7 @@ export function MenuImproved() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Card
                     className="cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden rounded-2xl"
-                    onClick={() => handleLocationSelect('cluj')}
+                    onClick={() => window.open('https://oddmenu.com/ro/p/vibe', '_blank')}
                 >
                   <div className="relative h-64 text-center">
                     <Image
@@ -191,7 +191,7 @@ export function MenuImproved() {
 
                 <Card
                     className="cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden rounded-2xl"
-                    onClick={() => handleLocationSelect('brasov')}
+                    onClick={() => window.open('https://oddmenu.com/ro/p/vibe-brasov/', '_blank')}
                 >
                   <div className="relative h-64">
                     <Image
