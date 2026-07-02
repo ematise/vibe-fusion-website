@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -108,11 +107,6 @@ html, body {
 
 .menu-item-image:hover {
   transform: scale(1.05);
-}
-
-/* Custom font classes */
-.font-script {
-  font-family: 'Dancing Script', cursive;
 }
 
 /* Line clamp utilities */

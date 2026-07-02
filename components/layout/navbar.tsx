@@ -44,9 +44,11 @@ export function Navbar() {
             <Image 
               src="/vibe-logo-white-transparent-bg-simple.png" 
               alt="Vibe Restaurant | Bar" 
-              width={48}
-              height={48}
+              width={161}
+              height={84}
               className="h-12 w-auto"
+              sizes="48px"
+              quality={85}
             />
           </Link>
 

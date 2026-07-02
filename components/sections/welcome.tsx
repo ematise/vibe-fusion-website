@@ -32,6 +32,9 @@ export function Welcome() {
                 alt="Elegant Vibe restaurant table setting"
                 fill
                 className="object-cover"
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={75}
               />
             </div>
           </div>

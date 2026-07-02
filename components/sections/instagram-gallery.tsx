@@ -62,6 +62,7 @@ function ImageItem({ image, index }: ImageItemProps) {
         onLoad={() => setIsLoaded(true)}
         loading="lazy"
         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+        quality={70}
       />
       
       {/* Hover overlay */}
