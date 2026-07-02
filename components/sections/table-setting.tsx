@@ -53,7 +53,7 @@ export function TableSetting() {
         className="object-cover"
         loading="lazy"
         sizes="100vw"
-        quality={70}
+        quality={60}
         style={{ objectPosition: `center ${backgroundPosition}%` }}
         aria-hidden
       />

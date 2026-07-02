@@ -4,15 +4,18 @@ import { useEffect, useRef, useState } from "react"
 
 export function HeroVideo() {
   const [shouldLoad, setShouldLoad] = useState(false)
-  const desktopRef = useRef<HTMLVideoElement>(null)
-  const mobileRef = useRef<HTMLVideoElement>(null)
+  const [isMobile, setIsMobile] = useState(true)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
+    const mobile = window.matchMedia('(max-width: 767px)').matches
+    setIsMobile(mobile)
+
     const scheduleLoad = () => {
       if (typeof window.requestIdleCallback === 'function') {
-        window.requestIdleCallback(() => setShouldLoad(true), { timeout: 4000 })
+        window.requestIdleCallback(() => setShouldLoad(true), { timeout: 6000 })
       } else {
-        setTimeout(() => setShouldLoad(true), 2500)
+        setTimeout(() => setShouldLoad(true), 4000)
       }
     }
 
@@ -26,48 +29,33 @@ export function HeroVideo() {
   }, [])
 
   useEffect(() => {
-    if (!shouldLoad) return
+    if (!shouldLoad || !videoRef.current) return
 
-    const playVideo = async (video: HTMLVideoElement | null) => {
-      if (!video) return
-      try {
-        await video.play()
-      } catch {
-        // Autoplay may be blocked until user interaction
-      }
-    }
-
-    void playVideo(desktopRef.current)
-    void playVideo(mobileRef.current)
-  }, [shouldLoad])
+    videoRef.current.play().catch(() => {
+      // Autoplay may be blocked until user interaction
+    })
+  }, [shouldLoad, isMobile])
 
   if (!shouldLoad) return null
 
+  const videoSrc = isMobile
+    ? '/images/cluj/video/mobile_video.mp4'
+    : '/images/cluj/video/desktop_video_nigiri.mp4'
+
   return (
-    <div className="absolute inset-0 z-[1] opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]">
+    <div className="absolute inset-0 z-[1]">
       <video
-        ref={desktopRef}
+        key={videoSrc}
+        ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
         preload="none"
-        className="hidden md:block w-full h-full object-cover brightness-40"
+        className="w-full h-full object-cover brightness-40"
         style={{ pointerEvents: 'none' }}
       >
-        <source src="/images/cluj/video/desktop_video_nigiri.mp4" type="video/mp4" />
-      </video>
-      <video
-        ref={mobileRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        className="md:hidden w-full h-full object-cover brightness-40"
-        style={{ pointerEvents: 'none' }}
-      >
-        <source src="/images/cluj/video/mobile_video.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/70 to-transparent" />
     </div>

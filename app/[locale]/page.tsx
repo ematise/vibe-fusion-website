@@ -1,11 +1,7 @@
 import { Navbar } from '@/components/layout/navbar'
+import { LazyFooter } from '@/components/layout/lazy-footer'
 import { Hero } from '@/components/sections/hero'
-import { Welcome } from '@/components/sections/welcome'
-import { TableSetting } from '@/components/sections/table-setting'
-import { TryOurMenu } from '@/components/sections/try-our-menu'
-import { DiscoverVenue } from '@/components/sections/discover-venue'
-import { Footer } from '@/components/layout/footer'
-import { InstagramGallery } from '@/components/sections/instagram-gallery'
+import { LazyHomeSections } from '@/components/sections/lazy-home-sections'
 import { getTranslations } from '@/lib/i18n-server'
 
 type Locale = 'ro' | 'en'
@@ -24,13 +20,9 @@ export default function Home({ params }: { params: { locale: string } }) {
           exploreMenu={t('hero.exploreMenu')}
           bookTable={t('hero.bookTable')}
         />
-        <Welcome />
-        <TryOurMenu />
-        <TableSetting />
-        <DiscoverVenue />
-        <InstagramGallery />
+        <LazyHomeSections />
       </main>
-      <Footer />
+      <LazyFooter />
     </>
   )
 }

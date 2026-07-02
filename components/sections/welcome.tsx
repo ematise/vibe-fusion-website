@@ -34,7 +34,7 @@ export function Welcome() {
                 className="object-cover"
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={75}
+                quality={60}
               />
             </div>
           </div>
