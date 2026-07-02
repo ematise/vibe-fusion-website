@@ -12,6 +12,7 @@ const inter = Inter({
   variable: '--font-inter',
   weight: ['400', '600'],
   display: 'swap',
+  preload: true,
 })
 
 const playfair = Playfair_Display({
@@ -19,6 +20,8 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
   weight: ['400', '700'],
   display: 'swap',
+  preload: false,
+  adjustFontFallback: true,
 })
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
@@ -29,6 +32,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   const metadata = translations.metadata
   
   return {
+    metadataBase: new URL('https://vibefusion.ro'),
     title: metadata.title,
     description: metadata.description,
     keywords: metadata.keywords,
