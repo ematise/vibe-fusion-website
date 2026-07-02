@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
+import Image from "next/image"
 
 export function TableSetting() {
   const [backgroundPosition, setBackgroundPosition] = useState(50)
@@ -11,28 +12,21 @@ export function TableSetting() {
   useEffect(() => {
     const handleScroll = () => {
       if (!containerRef.current) return
-      
+
       const rect = containerRef.current.getBoundingClientRect()
       const windowHeight = window.innerHeight
-      
-      // Calculate how much of the element is visible and its position
       const elementTop = rect.top
       const elementHeight = rect.height
-      
-      // Calculate parallax offset based on element position relative to viewport
       const scrollProgress = (windowHeight - elementTop) / (windowHeight + elementHeight)
-      
-      // Convert to background position percentage (0% to 100%)
       const bgPosition = Math.max(0, Math.min(100, scrollProgress * 40))
-      
+
       setTargetPosition(bgPosition)
     }
 
-    // Smooth animation function
     const animate = () => {
-      setBackgroundPosition(prev => {
+      setBackgroundPosition((prev) => {
         const diff = targetPosition - prev
-        const easing = diff * 0.05 // Adjust this value for smoother/faster animation (0.01 = very smooth, 0.1 = faster)
+        const easing = diff * 0.05
         return prev + easing
       })
       animationFrameRef.current = requestAnimationFrame(animate)
@@ -40,10 +34,8 @@ export function TableSetting() {
 
     window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
-    
-    // Start smooth animation
     animationFrameRef.current = requestAnimationFrame(animate)
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll)
       if (animationFrameRef.current) {
@@ -54,20 +46,18 @@ export function TableSetting() {
 
   return (
     <section ref={containerRef} className="relative h-32 md:h-80 lg:h-96 overflow-hidden">
-      {/* Background image with parallax */}
-      <div 
-        className="absolute inset-0 w-full h-full"
-        style={{
-          backgroundImage: 'url(/images/hero/2.jpg)',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: `center ${backgroundPosition}%`,
-          willChange: 'background-position'
-        }}
+      <Image
+        src="/images/hero/2.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        loading="lazy"
+        sizes="100vw"
+        quality={70}
+        style={{ objectPosition: `center ${backgroundPosition}%` }}
+        aria-hidden
       />
-      
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />
     </section>
   )
-} 
+}

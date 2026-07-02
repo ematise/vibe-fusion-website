@@ -2,6 +2,12 @@
   "name": "vibe-fusion-restaurant",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "chrome >= 87",
+    "firefox >= 78",
+    "safari >= 14",
+    "edge >= 88"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",

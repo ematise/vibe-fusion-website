@@ -21,6 +21,9 @@ export function TryOurMenu() {
                 alt="Delicious coffee and menu items at Vibe"
                 fill
                 className="object-cover"
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={75}
               />
             </div>
           </div>

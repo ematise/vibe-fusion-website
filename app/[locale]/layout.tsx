@@ -8,13 +8,17 @@ import roLocale from '@/locales/ro.json'
 import enLocale from '@/locales/en.json'
 
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-inter',
+  weight: ['400', '600'],
+  display: 'swap',
 })
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-playfair',
+  weight: ['400', '700'],
+  display: 'swap',
 })
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
@@ -42,7 +46,7 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
     openGraph: {
       title: metadata.ogTitle,
       description: metadata.ogDescription,
-      url: 'https://vibe.com',
+      url: 'https://vibefusion.ro',
       siteName: 'Vibe Restaurant | Bar',
       images: [
         {

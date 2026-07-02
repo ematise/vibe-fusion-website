@@ -19,9 +19,12 @@ export function Footer() {
               <Image 
                 src="/vibe-logo-white-transparent-bg.png" 
                 alt="Vibe Restaurant | Bar" 
-                width={128}
-                height={128}
+                width={345}
+                height={224}
                 className="h-32 w-auto"
+                loading="lazy"
+                sizes="(max-width: 768px) 200px, 345px"
+                quality={85}
               />
 
             </div>
