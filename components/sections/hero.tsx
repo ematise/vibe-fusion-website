@@ -1,13 +1,9 @@
-import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import type { Locale } from '@/lib/i18n'
+import { HeroVideoWrapper } from './hero-video-wrapper'
 
-const HeroVideo = dynamic(
-  () => import('./hero-video').then((mod) => mod.HeroVideo),
-  { ssr: false }
-)
+type Locale = 'ro' | 'en'
 
 interface HeroProps {
   locale: Locale
@@ -33,7 +29,7 @@ export function Hero({ locale, description, exploreMenu, bookTable }: HeroProps)
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/70 to-transparent" />
       </div>
 
-      <HeroVideo />
+      <HeroVideoWrapper />
 
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4 animate-fade-in">
         <div className="space-y-6">
