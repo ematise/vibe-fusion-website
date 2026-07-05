@@ -43,14 +43,14 @@ export function generateMetadata({ params }: { params: { locale: string } }): Me
   }
 }
 
-export default function ReservationsPage() {
+export default function ReservationsPage({ params }: { params: { locale: string } }) {
   return (
     <>
       <Navbar />
       <main className="min-h-screen pt-20">
         <Reservations />
       </main>
-      <Footer />
+      <Footer locale={params.locale as 'ro' | 'en'} />
     </>
   )
 }

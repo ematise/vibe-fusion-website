@@ -41,7 +41,7 @@ export function Hero({ locale, description, exploreMenu, bookTable }: HeroProps)
                 width={320}
                 height={208}
                 className="h-32 md:h-40 w-auto mx-auto drop-shadow-lg"
-                loading="lazy"
+                priority
                 sizes="(max-width: 768px) 200px, 320px"
                 quality={70}
               />

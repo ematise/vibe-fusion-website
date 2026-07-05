@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
-import { useTranslation } from "@/lib/i18n"
+import { useState } from "react"
 
 const instagramImages = [
   { id: 1, src: "/images/cluj/insta_latest/1.webp", alt: "Vibe Fusion Instagram post 1" },
@@ -26,40 +25,15 @@ const instagramImages = [
 
 interface ImageItemProps {
   image: typeof instagramImages[0]
-  index: number
 }
 
-function ImageItem({ image, index }: ImageItemProps) {
+function ImageItem({ image }: ImageItemProps) {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const element = ref.current
-    if (!element) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      { rootMargin: "-100px" }
-    )
-
-    observer.observe(element)
-    return () => observer.disconnect()
-  }, [])
 
   return (
     <div
-      ref={ref}
-      className={`group relative aspect-square overflow-hidden rounded-xl bg-gray-100 transition-all duration-500 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
-      style={{ transitionDelay: `${index * 100}ms` }}
+      className="group relative aspect-square overflow-hidden rounded-xl bg-gray-100"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -90,14 +64,12 @@ function ImageItem({ image, index }: ImageItemProps) {
 }
 
 export function InstagramGallery() {
-  useTranslation()
-
   return (
     <section className="py-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-          {instagramImages.map((image, index) => (
-            <ImageItem key={image.id} image={image} index={index} />
+          {instagramImages.map((image) => (
+            <ImageItem key={image.id} image={image} />
           ))}
         </div>
       </div>

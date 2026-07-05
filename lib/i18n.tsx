@@ -40,21 +40,25 @@ function getNestedValue(data: Record<string, unknown>, key: string): string {
   return typeof value === 'string' ? value : key
 }
 
-export function LanguageProvider({ children, initialLocale = 'ro' }: {
+export function LanguageProvider({
+  children,
+  initialLocale = 'ro',
+  initialTranslations = {},
+}: {
   children: ReactNode
   initialLocale?: Locale
+  initialTranslations?: Record<string, unknown>
 }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale)
-  const [translations, setTranslations] = useState<Record<string, unknown>>({})
+  const [translations, setTranslations] = useState<Record<string, unknown>>(initialTranslations)
   const [isClient, setIsClient] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
 
   useEffect(() => {
     setIsClient(true)
-    setLocaleState(initialLocale)
-    loadTranslations(initialLocale).then(setTranslations)
-  }, [initialLocale])
+    translationCache[initialLocale] = initialTranslations
+  }, [initialLocale, initialTranslations])
 
   const t = (key: string): string => getNestedValue(translations, key)
 
@@ -65,7 +69,11 @@ export function LanguageProvider({ children, initialLocale = 'ro' }: {
       document.cookie = `preferred-language=${newLocale}; path=/; max-age=${60 * 60 * 24 * 365}`
     }
 
-    loadTranslations(newLocale).then(setTranslations)
+    if (translationCache[newLocale]) {
+      setTranslations(translationCache[newLocale]!)
+    } else {
+      loadTranslations(newLocale).then(setTranslations)
+    }
 
     const pathWithoutLocale = pathname.replace(/^\/(ro|en)/, '')
     router.push(`/${newLocale}${pathWithoutLocale}`)
@@ -73,8 +81,8 @@ export function LanguageProvider({ children, initialLocale = 'ro' }: {
 
   useEffect(() => {
     setLocaleState(initialLocale)
-    loadTranslations(initialLocale).then(setTranslations)
-  }, [initialLocale])
+    setTranslations(initialTranslations)
+  }, [initialLocale, initialTranslations])
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale, t }}>

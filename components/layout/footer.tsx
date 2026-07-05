@@ -1,24 +1,25 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react"
-import { useTranslation } from "@/lib/i18n"
+import { MapPin, Phone, Mail, Instagram } from "lucide-react"
 import { H3 } from "@/components/ui/headings"
+import { getTranslations, type Locale } from "@/lib/i18n-server"
 
-export function Footer() {
-  const { t } = useTranslation()
+interface FooterProps {
+  locale: Locale
+}
+
+export function Footer({ locale }: FooterProps) {
+  const t = getTranslations(locale)
 
   return (
     <footer className="bg-brand-primary text-white">
       <div className="container mx-auto px-8 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Restaurant Info */}
           <div className="space-y-6 pr-6 md:col-span-2">
-            <div className="">
-              <Image 
-                src="/vibe-logo-white-transparent-bg.png" 
-                alt="Vibe Restaurant | Bar" 
+            <div>
+              <Image
+                src="/vibe-logo-white-transparent-bg.png"
+                alt="Vibe Restaurant | Bar"
                 width={345}
                 height={224}
                 className="h-32 w-auto"
@@ -26,17 +27,15 @@ export function Footer() {
                 sizes="(max-width: 768px) 200px, 345px"
                 quality={85}
               />
-
             </div>
           </div>
 
-          {/* Cluj Location */}
           <div className="space-y-4 mt-8">
             <H3 variant="accent" className="text-gray-50">Cluj</H3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-50 mt-0.5 flex-shrink-0" />
-                <Link 
+                <Link
                   href="https://maps.google.com/maps?q=Vibe+Fusion+%26+Restaurant+Sushi+Cluj"
                   target="_blank"
                   className="text-gray-50 hover:text-brand-secondary transition-colors underline"
@@ -47,7 +46,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-50 flex-shrink-0" />
-                <Link 
+                <Link
                   href="tel:0723072720"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
@@ -56,7 +55,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-50 flex-shrink-0" />
-                <Link 
+                <Link
                   href="mailto:cluj@vibefusion.ro"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
@@ -64,8 +63,8 @@ export function Footer() {
                 </Link>
               </div>
               <div className="flex items-center space-x-2 mt-3">
-                <Link 
-                  href="https://www.instagram.com/vibefusion.cluj/" 
+                <Link
+                  href="https://www.instagram.com/vibefusion.cluj/"
                   target="_blank"
                   className="text-gray-100 hover:text-brand-secondary transition-colors flex items-center gap-2"
                 >
@@ -84,13 +83,12 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Brasov Location */}
           <div className="space-y-4 mt-8">
             <H3 variant="accent" className="text-gray-50">Brașov</H3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-50 mt-0.5 flex-shrink-0" />
-                <Link 
+                <Link
                   href="https://maps.google.com/maps?q=Vibe+Restaurant+Sushi+Brasov+%26+Cocktail+Bar"
                   target="_blank"
                   className="text-gray-50 hover:text-brand-secondary transition-colors underline"
@@ -101,7 +99,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-50 flex-shrink-0" />
-                <Link 
+                <Link
                   href="tel:0736924117"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
@@ -110,7 +108,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-50 flex-shrink-0" />
-                <Link 
+                <Link
                   href="mailto:brasov@vibefusion.ro"
                   className="text-sm text-gray-50 hover:text-brand-secondary transition-colors"
                 >
@@ -118,8 +116,8 @@ export function Footer() {
                 </Link>
               </div>
               <div className="flex items-center space-x-2 mt-3">
-                <Link 
-                  href="https://www.instagram.com/vibefusion__/" 
+                <Link
+                  href="https://www.instagram.com/vibefusion__/"
                   target="_blank"
                   className="text-gray-100 hover:text-brand-secondary transition-colors flex items-center gap-2"
                 >
@@ -150,8 +148,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   )
-} 
+}

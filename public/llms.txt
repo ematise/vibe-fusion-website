@@ -1,0 +1,24 @@
+# Vibe Restaurant | Bar
+
+> Vibe is a sushi and cocktail bar with locations in Cluj-Napoca and Brașov, Romania. It serves specialty coffee, brunch, fusion cuisine, sushi, and cocktails in a vibrant tropical atmosphere.
+
+## Main pages
+
+- [Home (English)](https://vibefusion.ro/en): Landing page with venue highlights, menu preview, and reservation links
+- [Home (Romanian)](https://vibefusion.ro/ro): Pagina principală în limba română
+- [Menu](https://vibefusion.ro/en/menu): Full food and drinks menu with sushi, cocktails, and fusion dishes
+- [Reservations](https://vibefusion.ro/en/reservations): Book a table online at Vibe Cluj or Brașov
+- [About](https://vibefusion.ro/en/about): Brand story, philosophy, and team background
+- [Contact](https://vibefusion.ro/en/contact): Addresses, phone numbers, email, and opening hours for both locations
+
+## Locations
+
+- [Vibe Cluj on Google Maps](https://maps.google.com/maps?q=Vibe+Fusion+%26+Restaurant+Sushi+Cluj): Strada Zorilor 25, Cluj-Napoca — open daily 10:00–22:00
+- [Vibe Brașov on Google Maps](https://maps.google.com/maps?q=Vibe+Restaurant+Sushi+Brasov+%26+Cocktail+Bar): Strada Valentin Wagner 4, Brașov — open Mon–Sun with extended weekend hours
+
+## Optional
+
+- [Instagram Cluj](https://www.instagram.com/vibefusion.cluj/): Photos and updates from the Cluj location
+- [Instagram Brașov](https://www.instagram.com/vibefusion__/): Photos and updates from the Brașov location
+- [Sitemap](https://vibefusion.ro/sitemap.xml): Full list of indexed pages on vibefusion.ro
+- [Robots](https://vibefusion.ro/robots.txt): Crawler directives for search engines

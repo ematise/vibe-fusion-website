@@ -1,30 +1,29 @@
-"use client"
-
 import Image from "next/image"
-import { useTranslation } from "@/lib/i18n"
 import { H2 } from "@/components/ui/headings"
 
-export function Welcome() {
-  const { t } = useTranslation()
+interface WelcomeProps {
+  title: string
+  intro: string
+  description: string
+}
 
+export function Welcome({ title, intro, description }: WelcomeProps) {
   return (
     <section className="py-8 bg-brand-accent/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="space-y-6">
             <H2 size="lg" className="mb-6 text-[#8B6914]">
-              {t("welcome.title")}
+              {title}
             </H2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              {t("welcome.intro")}
+              {intro}
             </p>
             <p className="text-gray-600 leading-relaxed">
-              {t("welcome.description")}
+              {description}
             </p>
           </div>
 
-          {/* Image */}
           <div className="relative">
             <div className="relative h-96 lg:h-[400px] rounded-2xl overflow-hidden shadow-lg">
               <Image
@@ -42,4 +41,4 @@ export function Welcome() {
       </div>
     </section>
   )
-} 
+}
