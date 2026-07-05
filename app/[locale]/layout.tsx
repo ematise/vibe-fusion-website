@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
   subsets: ['latin', 'latin-ext'],
   variable: '--font-playfair',
   weight: ['400', '700'],
-  display: 'swap',
+  display: 'optional',
   preload: false,
   adjustFontFallback: true,
 })
@@ -95,6 +95,14 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale} className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/restaurant/vibe-restaurant-terrace.jpg"
+          fetchPriority="high"
+        />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <LanguageProvider initialLocale={locale as 'ro' | 'en'}>
           {children}

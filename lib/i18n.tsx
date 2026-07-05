@@ -3,7 +3,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 
-// Language types
 export type Locale = 'ro' | 'en'
 
 interface LanguageContextType {
@@ -12,61 +11,69 @@ interface LanguageContextType {
   t: (key: string) => string
 }
 
-// Create context
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-// Translation data
-const translations: Record<Locale, any> = {
-  ro: require('../locales/ro.json'),
-  en: require('../locales/en.json'),
+const translationCache: Partial<Record<Locale, Record<string, unknown>>> = {}
+
+async function loadTranslations(locale: Locale): Promise<Record<string, unknown>> {
+  if (translationCache[locale]) {
+    return translationCache[locale]!
+  }
+
+  const data =
+    locale === 'ro'
+      ? (await import('../locales/ro.json')).default
+      : (await import('../locales/en.json')).default
+
+  translationCache[locale] = data
+  return data
 }
 
-// Language provider component
-export function LanguageProvider({ children, initialLocale = 'ro' }: { 
+function getNestedValue(data: Record<string, unknown>, key: string): string {
+  const keys = key.split('.')
+  let value: unknown = data
+
+  for (const k of keys) {
+    value = (value as Record<string, unknown>)?.[k]
+  }
+
+  return typeof value === 'string' ? value : key
+}
+
+export function LanguageProvider({ children, initialLocale = 'ro' }: {
   children: ReactNode
-  initialLocale?: Locale 
+  initialLocale?: Locale
 }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale)
+  const [translations, setTranslations] = useState<Record<string, unknown>>({})
   const [isClient, setIsClient] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
 
-  // Initialize client-side state
   useEffect(() => {
     setIsClient(true)
     setLocaleState(initialLocale)
+    loadTranslations(initialLocale).then(setTranslations)
   }, [initialLocale])
 
-  // Get translation function
-  const t = (key: string): string => {
-    const keys = key.split('.')
-    let value = translations[locale]
-    
-    for (const k of keys) {
-      value = value?.[k]
-    }
-    
-    return value || key
-  }
+  const t = (key: string): string => getNestedValue(translations, key)
 
-  // Set locale with URL update
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale)
-    
-    // Only access document on client-side
+
     if (isClient && typeof document !== 'undefined') {
       document.cookie = `preferred-language=${newLocale}; path=/; max-age=${60 * 60 * 24 * 365}`
     }
-    
-    // Update URL to include new locale
-    const currentPath = pathname
-    const pathWithoutLocale = currentPath.replace(/^\/(ro|en)/, '')
+
+    loadTranslations(newLocale).then(setTranslations)
+
+    const pathWithoutLocale = pathname.replace(/^\/(ro|en)/, '')
     router.push(`/${newLocale}${pathWithoutLocale}`)
   }
 
-  // Update locale state when initial locale changes
   useEffect(() => {
     setLocaleState(initialLocale)
+    loadTranslations(initialLocale).then(setTranslations)
   }, [initialLocale])
 
   return (
@@ -76,7 +83,6 @@ export function LanguageProvider({ children, initialLocale = 'ro' }: {
   )
 }
 
-// Custom hook to use language context
 export function useLanguage() {
   const context = useContext(LanguageContext)
   if (context === undefined) {
@@ -85,14 +91,12 @@ export function useLanguage() {
   return context
 }
 
-// Custom hook for translations
 export function useTranslation() {
   const { t } = useLanguage()
   return { t }
 }
 
-// Language information
 export const languages = {
   ro: { name: 'Română', flag: '🇷🇴' },
   en: { name: 'English', flag: '🇬🇧' },
-} 
+}
