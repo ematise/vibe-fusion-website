@@ -1,11 +1,8 @@
 "use client"
 
-import { motion } from "framer-motion"
 import Image from "next/image"
-import { useState } from "react"
-import { PageHeading } from "@/components/ui/page-heading"
+import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "@/lib/i18n"
-import { Instagram, ExternalLink } from "lucide-react"
 
 const instagramImages = [
   { id: 1, src: "/images/cluj/insta_latest/1.webp", alt: "Vibe Fusion Instagram post 1" },
@@ -35,57 +32,69 @@ interface ImageItemProps {
 function ImageItem({ image, index }: ImageItemProps) {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const element = ref.current
+    if (!element) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: "-100px" }
+    )
+
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true, margin: "-100px" }}
-      className="group relative aspect-square overflow-hidden rounded-xl bg-gray-100"
+    <div
+      ref={ref}
+      className={`group relative aspect-square overflow-hidden rounded-xl bg-gray-100 transition-all duration-500 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      }`}
+      style={{ transitionDelay: `${index * 100}ms` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Loading skeleton */}
       {!isLoaded && (
         <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse" />
       )}
-      
-      {/* Image */}
+
       <Image
         src={image.src}
         alt={image.alt}
         fill
         className={`object-cover transition-all duration-500 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        } ${isHovered ? 'scale-110' : 'scale-100'}`}
+          isLoaded ? "opacity-100" : "opacity-0"
+        } ${isHovered ? "scale-110" : "scale-100"}`}
         onLoad={() => setIsLoaded(true)}
         loading="lazy"
         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
         quality={55}
       />
-      
-      {/* Hover overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 ${
-        isHovered ? 'opacity-100' : 'opacity-0'
-      }`}>
-        <div className="absolute bottom-4 left-4 right-4">
-        </div>
-      </div>
-    </motion.div>
+
+      <div
+        className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 ${
+          isHovered ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    </div>
   )
 }
 
 export function InstagramGallery() {
-  const { t } = useTranslation()
+  useTranslation()
 
   return (
     <section className="py-8 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-
-
-        {/* Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           {instagramImages.map((image, index) => (
             <ImageItem key={image.id} image={image} index={index} />

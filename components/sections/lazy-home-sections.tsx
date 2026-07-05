@@ -14,8 +14,9 @@ const TableSetting = dynamic(() =>
 const DiscoverVenue = dynamic(() =>
   import('./discover-venue').then((mod) => mod.DiscoverVenue)
 )
-const InstagramGallery = dynamic(() =>
-  import('./instagram-gallery').then((mod) => mod.InstagramGallery)
+const InstagramGallery = dynamic(
+  () => import('./instagram-gallery').then((mod) => mod.InstagramGallery),
+  { ssr: false }
 )
 
 export function LazyHomeSections() {
