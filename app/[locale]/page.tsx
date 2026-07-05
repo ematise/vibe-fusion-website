@@ -4,8 +4,7 @@ import { Hero } from '@/components/sections/hero'
 import { Welcome } from '@/components/sections/welcome'
 import { TryOurMenu } from '@/components/sections/try-our-menu'
 import { DiscoverVenue } from '@/components/sections/discover-venue'
-import { TableSetting } from '@/components/sections/table-setting'
-import { InstagramGallery } from '@/components/sections/instagram-gallery'
+import { DeferredHomeSections } from '@/components/sections/deferred-home-sections'
 import { getTranslations } from '@/lib/i18n-server'
 
 type Locale = 'ro' | 'en'
@@ -36,14 +35,14 @@ export default function Home({ params }: { params: { locale: string } }) {
           description={t('tryMenu.description')}
           viewMenu={t('tryMenu.viewMenu')}
         />
-        <TableSetting />
+        <DeferredHomeSections section="table" />
         <DiscoverVenue
           title={t('discoverVenue.title')}
           intro={t('discoverVenue.intro')}
           description1={t('discoverVenue.description1')}
           description2={t('discoverVenue.description2')}
         />
-        <InstagramGallery />
+        <DeferredHomeSections section="gallery" />
       </main>
       <Footer locale={locale} />
     </>

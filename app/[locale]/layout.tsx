@@ -10,7 +10,7 @@ import enLocale from '@/locales/en.json'
 const inter = Inter({
   subsets: ['latin', 'latin-ext'],
   variable: '--font-inter',
-  weight: ['400', '600'],
+  weight: ['400'],
   display: 'swap',
   preload: true,
 })
@@ -93,23 +93,10 @@ export default function LocaleLayout({
   children: React.ReactNode
   params: { locale: string }
 }) {
-  const localeTranslations = locale === 'ro' ? roLocale : enLocale
-
   return (
     <html lang={locale} className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/restaurant/vibe-restaurant-terrace.jpg"
-          fetchPriority="high"
-        />
-      </head>
       <body className={inter.className} suppressHydrationWarning>
-        <LanguageProvider
-          initialLocale={locale as 'ro' | 'en'}
-          initialTranslations={localeTranslations}
-        >
+        <LanguageProvider initialLocale={locale as 'ro' | 'en'}>
           {children}
         </LanguageProvider>
       </body>

@@ -24,7 +24,7 @@ export function Hero({ locale, description, exploreMenu, bookTable }: HeroProps)
           priority
           fetchPriority="high"
           sizes="100vw"
-          quality={60}
+          quality={55}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/70 to-transparent" />
       </div>
@@ -41,7 +41,7 @@ export function Hero({ locale, description, exploreMenu, bookTable }: HeroProps)
                 width={320}
                 height={208}
                 className="h-32 md:h-40 w-auto mx-auto drop-shadow-lg"
-                priority
+                loading="lazy"
                 sizes="(max-width: 768px) 200px, 320px"
                 quality={70}
               />
