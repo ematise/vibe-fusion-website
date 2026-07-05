@@ -13,20 +13,9 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-const translationCache: Partial<Record<Locale, Record<string, unknown>>> = {}
-
-async function loadTranslations(locale: Locale): Promise<Record<string, unknown>> {
-  if (translationCache[locale]) {
-    return translationCache[locale]!
-  }
-
-  const data =
-    locale === 'ro'
-      ? (await import('../locales/ro.json')).default
-      : (await import('../locales/en.json')).default
-
-  translationCache[locale] = data
-  return data
+const translations: Record<Locale, Record<string, unknown>> = {
+  ro: require('../locales/ro.json'),
+  en: require('../locales/en.json'),
 }
 
 function getNestedValue(data: Record<string, unknown>, key: string): string {
@@ -43,24 +32,20 @@ function getNestedValue(data: Record<string, unknown>, key: string): string {
 export function LanguageProvider({
   children,
   initialLocale = 'ro',
-  initialTranslations = {},
 }: {
   children: ReactNode
   initialLocale?: Locale
-  initialTranslations?: Record<string, unknown>
 }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale)
-  const [translations, setTranslations] = useState<Record<string, unknown>>(initialTranslations)
   const [isClient, setIsClient] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
 
   useEffect(() => {
     setIsClient(true)
-    translationCache[initialLocale] = initialTranslations
-  }, [initialLocale, initialTranslations])
+  }, [])
 
-  const t = (key: string): string => getNestedValue(translations, key)
+  const t = (key: string): string => getNestedValue(translations[locale], key)
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale)
@@ -69,20 +54,13 @@ export function LanguageProvider({
       document.cookie = `preferred-language=${newLocale}; path=/; max-age=${60 * 60 * 24 * 365}`
     }
 
-    if (translationCache[newLocale]) {
-      setTranslations(translationCache[newLocale]!)
-    } else {
-      loadTranslations(newLocale).then(setTranslations)
-    }
-
     const pathWithoutLocale = pathname.replace(/^\/(ro|en)/, '')
     router.push(`/${newLocale}${pathWithoutLocale}`)
   }
 
   useEffect(() => {
     setLocaleState(initialLocale)
-    setTranslations(initialTranslations)
-  }, [initialLocale, initialTranslations])
+  }, [initialLocale])
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale, t }}>

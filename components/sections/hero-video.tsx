@@ -13,7 +13,11 @@ function shouldSkipVideo(): boolean {
   }).connection
 
   if (connection?.saveData) return true
-  if (connection?.effectiveType === "slow-2g" || connection?.effectiveType === "2g") {
+  if (
+    connection?.effectiveType === 'slow-2g' ||
+    connection?.effectiveType === '2g' ||
+    connection?.effectiveType === '3g'
+  ) {
     return true
   }
 
