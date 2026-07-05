@@ -1,4 +1,4 @@
-type Locale = 'ro' | 'en'
+export type Locale = 'ro' | 'en'
 
 import roLocale from '@/locales/ro.json'
 import enLocale from '@/locales/en.json'

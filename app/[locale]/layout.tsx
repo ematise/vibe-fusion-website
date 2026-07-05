@@ -93,6 +93,8 @@ export default function LocaleLayout({
   children: React.ReactNode
   params: { locale: string }
 }) {
+  const localeTranslations = locale === 'ro' ? roLocale : enLocale
+
   return (
     <html lang={locale} className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
@@ -104,7 +106,10 @@ export default function LocaleLayout({
         />
       </head>
       <body className={inter.className} suppressHydrationWarning>
-        <LanguageProvider initialLocale={locale as 'ro' | 'en'}>
+        <LanguageProvider
+          initialLocale={locale as 'ro' | 'en'}
+          initialTranslations={localeTranslations}
+        >
           {children}
         </LanguageProvider>
       </body>
