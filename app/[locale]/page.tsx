@@ -1,19 +1,12 @@
-import dynamic from 'next/dynamic'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import { Hero } from '@/components/sections/hero'
 import { Welcome } from '@/components/sections/welcome'
 import { TryOurMenu } from '@/components/sections/try-our-menu'
 import { DiscoverVenue } from '@/components/sections/discover-venue'
+import { TableSetting } from '@/components/sections/table-setting'
+import { InstagramGallery } from '@/components/sections/instagram-gallery'
 import { getTranslations } from '@/lib/i18n-server'
-
-const TableSetting = dynamic(() =>
-  import('@/components/sections/table-setting').then((mod) => mod.TableSetting)
-)
-
-const InstagramGallery = dynamic(() =>
-  import('@/components/sections/instagram-gallery').then((mod) => mod.InstagramGallery)
-)
 
 type Locale = 'ro' | 'en'
 
